@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Faemarrows Pawborough Color Indexer</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+
+	<script src="colorIndexerScript.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script> 
+
+	</head>
+	<body>
+		<div class="container-fluid">
+		 	<div class="row">
+
+			    <div class="col-sm-3">
+					<div id="colorSet">
+					</div>
+			    </div>
+
+			    <div class="col-sm-3">
+						<form id="Hue">Hue:<br>
+
+						<!--<input type="checkbox" name="Hue" id="Hue" multiple>-->
+							<input type="checkbox" id="Greyscale" name="Greyscale" value="Greyscale">
+							<label for="Greyscale">Greyscale</label><br>
+
+							<input type="checkbox" id="Brown" name="Brown" value="Brown">
+							<label for="Brown">Brown</label><br>
+
+							<input type="checkbox" id="Red" name="Red" value="Red">
+							<label for="Red">Red</label><br>
+
+							<input type="checkbox" id="Orange" name="Orange" value="Orange">
+							<label for="Orange">Orange</label><br>
+
+							<input type="checkbox" id="Yellow" name="Yellow" value="Yellow">
+							<label for="Yellow">Yellow</label><br>
+
+							<input type="checkbox" id="Green" name="Green" value="Green">
+							<label for="Green">Green</label><br>
+
+							<input type="checkbox" id="Teal" name="Teal" value="Teal">
+							<label for="Teal">Teal</label><br>
+
+							<input type="checkbox" id="Blue" name="Blue" value="Blue">
+							<label for="Blue">Blue</label><br>
+
+							<input type="checkbox" id="Purple" name="Purple" value="Purple">
+							<label for="Purple">Purple</label><br>
+
+							<input type="checkbox" id="Pink" name="Pink" value="Pink">
+							<label for="Pink">Pink</label><br>
+
+						</form>
+						
+
+						<br>
+
+						<form id="Saturation">Saturation:<br>
+
+
+						<!--<input type="checkbox" name="Saturation" id="Saturation">-->
+							<input type="checkbox" id="Saturated" name="Saturated" value="Saturated">
+							<label for="Saturated">Saturated</label><br>
+
+							<input type="checkbox" id="Desaturated" name="Desaturated" value="Desaturated">
+							<label for="Desaturated">Desaturated</label><br>
+
+							<input type="checkbox" id="Universal" name="Universal" value="Universal">
+							<label for="Universal">Universal</label><br>
+						
+						</form>
+
+						<br>
+
+						<form id="Luminosity">Luminosity:<br>
+
+
+						<!--<input type="checkbox" name="Luminosity" id="Luminosity">-->
+							<input type="checkbox" id="Light" name="Light" value="Light">
+							<label for="Light">Light</label><br>
+
+							<input type="checkbox" id="Medium" name="Medium" value="Medium">
+							<label for="Medium">Medium</label><br>
+
+							<input type="checkbox" id="Dark" name="Dark" value="Dark">
+							<label for="Dark">Dark</label><br>
+
+						</form>
+						
+				</div>	
+
+			    <div class="col-sm-3">
+			    	<div>Sort Order:</div> <br>
+			    	<label for=Primary> Primary </label>
+						<label for="SortPrimary"></label>
+
+						<select name="SortPrimary" id="SortPrimary">
+							<option value="Hue">Hue</option>
+							<option value="Saturation">Saturation</option>
+							<option value="Luminosity">Luminosity</option>
+						</select>
+					<br>
+					<label for=Secondary> Secondary </label>
+						<label for="SortSecondary"></label>
+
+						<select name="SortSecondary" id="SortSecondary">
+							<option value="Hue">Hue</option>
+							<option value="Saturation">Saturation</option>
+							<option value="Luminosity">Luminosity</option>
+						</select>		
+
+						<br>
+						<input type="checkbox" id="showColorAttributes" name="showColorAttributes" value="showColorAttributes">
+						<label for="showColorAttributes">Show Color Attributes?</label><br>						
+
+					<br><br>
+					<button id="Generator" class="translate-middle" onclick="generate()">Generate</button>
+					<!--<button id="Reset" class="translate-middle" onclick="window.location.reload()">Reset</button>-->				
+
+				</div>
+
+				<div class="col-sm-3">
+					<div id=key>
+						<span> Key </span><br>
+						<span class="cooperativeSVG">Light <svg id=colorSymbolLightBasis viewbox="0, 0, 16, 16"><path class="colorSymbolLight"></path></svg></span>
+						<br>
+						<span class="cooperativeSVG">Medium <svg id=colorSymbolMediumBasis viewbox="0, 0, 16, 16"><path class="colorSymbolMedium"></path></svg></span>
+						<br>						
+						<span class="cooperativeSVG">Dark <svg id=colorSymbolDarkBasis viewbox="0, 0, 16, 16"><path class="colorSymbolDark"></path><circle id="Ellipse 65" cx="8.00043" cy="8.00022" r="4.00022" fill="currentColor"></circle></span>
+						<br>
+						<span class="cooperativeSVG">Saturated <svg id=colorSymbolSaturatedBasis viewbox="0, 0, 16, 16"><path class="colorSymbolSaturated"></path></svg></span>
+						<br>						
+
+					</div>
+
+				</div>
+			</div>			
+
+		 	<div class="row">
+
+			</div>
+
+		</div>
+
+
+
+	</body>
+
+
+
+
