@@ -2,6 +2,11 @@ button {
   text-align: center;
 }
 
+h2{
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
 .tab {
   margin-left: 50px;
 }
@@ -20,6 +25,10 @@ border, .border-thin {
   border-color: rgba(var(--v-border-color),var(--v-border-opacity)) !important;
   border-style: solid !important;
   border-width: thin !important;
+}
+
+footer{
+  text-align: right;
 }
 
 /* IDS BEGIN */
@@ -138,8 +147,6 @@ Retrieved 2026-08-12, License - CC BY-SA 3.0
   fill: transparent;
   stroke: currentColor; 
   stroke-width: 4px ;
-  width: 15px;
-  height: 16px;
 }
 
 #colorSymbolSaturatedBasis{  
@@ -156,7 +163,7 @@ Retrieved 2026-08-12, License - CC BY-SA 3.0
 }
 
 
-#key{
+.key{
 
   border-color: #d3d1cc;
   border-style: solid !important;
@@ -165,6 +172,9 @@ Retrieved 2026-08-12, License - CC BY-SA 3.0
 
   border-radius: 8px !important;
   background-color: #fffdf8;
+
+  max-height: 300px;
+  overflow: hidden;
 }
 
 #keyColors div{
@@ -180,6 +190,10 @@ Retrieved 2026-08-12, License - CC BY-SA 3.0
     margin-left: 1em;   
     right: 10%; 
     position: absolute;
+}
+
+#forumButton{
+  margin-bottom: 10px;
 }
 
 #greyscaleSymbol{

@@ -29,7 +29,7 @@
 			    </div>
 
 			    <div class="col-sm-2">
-						<form id="Hue">Hue:<br>
+						<form id="Hue"><h2>Hue:</h2>
 
 						<!--<input type="checkbox" name="Hue" id="Hue" multiple>-->
 							<input type="checkbox" id="Greyscale" name="Greyscale" value="Greyscale" checked>
@@ -67,7 +67,7 @@
 
 						<br>
 
-						<form id="Saturation">Saturation:<br>
+						<form id="Saturation"><h2>Saturation:</h2>
 
 
 						<!--<input type="checkbox" name="Saturation" id="Saturation">-->
@@ -84,7 +84,7 @@
 
 						<br>
 
-						<form id="Luminosity">Luminosity:<br>
+						<form id="Luminosity"><h2>Luminosity:</h2>
 
 
 						<!--<input type="checkbox" name="Luminosity" id="Luminosity">-->
@@ -102,8 +102,8 @@
 				</div>	
 
 			    <div class="col-sm-3">
-			    	<div>Sort Order:</div> <br>
-			    	<label for=Primary> Primary </label>
+			    	<div><h2>Sort Order:</h2></div>
+			    	   	<label for=Primary> Primary </label>
 						<label for="SortPrimary"></label>
 
 						<select name="SortPrimary" id="SortPrimary">
@@ -137,7 +137,10 @@
 
 						<p>If Primary or Secondary sort is Luminosity,</p>
 						<input type="checkbox" id="luminosityReverse" name="luminosityReverse" value="luminosityReverse">
-						<label for="luminosityReverse">Reverse Luminosity Sort Order?</label><br>						
+						<label for="luminosityReverse">Reverse Luminosity Sort Order?</label><br><br>					
+
+						<label for="userInput">Optional Label:</label><br>		
+						<input type="input" id="userInput" name="userInput" value="">
 
 					<br><br>	
 					<button id="Generator" class="translate-middle" onclick="generate()">Generate</button>
@@ -146,13 +149,13 @@
 				</div>
 
 				<div class="col-sm-3">
-					<div id=key>
-						<span> Key </span><br>
+					<div class=key>
+						<h2> Key: </h2>
 						<span class="cooperativeSVG">Light <svg id=colorSymbolLightBasis viewbox="0, 0, 16, 16"><path class="colorSymbolLight"></path></svg></span>
 						<br>
 						<span class="cooperativeSVG">Medium <svg id=colorSymbolMediumBasis viewbox="0, 0, 16, 16"><path class="colorSymbolMedium"></path></svg></span>
 						<br>						
-						<span class="cooperativeSVG">Dark <svg id=colorSymbolDarkBasis viewbox="0, 0, 16, 16"><path class="colorSymbolDark"></path><circle id="Ellipse 65" cx="8.00043" cy="8.00022" r="4.00022" fill="currentColor"></circle></span>
+						<span class="cooperativeSVG">Dark <svg id=colorSymbolDarkBasis viewbox="0, 0, 16, 16"><path class="colorSymbolDark"></path><circle id="Ellipse 65" cx="8.00043" cy="8.00022" r="4.00022" fill="currentColor"></circle></svg></span>
 						<br>
 						<span class="cooperativeSVG">Saturated <svg id=colorSymbolSaturatedBasis viewbox="0, 0, 16, 16"><path class="colorSymbolSaturated"></path></svg></span>
 						<br>
@@ -174,22 +177,27 @@
 						</div>						
 
 					</div>
-				<br>
-				<p>Problems or suggestions? Contact Faemarrow on PB</p>
+					<br>
+					<p>Problems or suggestions? Contact Faemarrow on PB</p>
 
+					<h2>Forum Code:</h2>
+					<button onclick="copyFunction()" id=forumButton>Copy text</button> 
+					<div id= forumBox class=key>
+
+					</div>
+					<p>Note: Forum code is simplified and only shows the color and name.</p>
 				</div>
-			</div>			
-
-		 	<div class="row">
-
-			</div>
-
+			</div>	
 		</div>
 
 
 
-	</body>
+		<footer>
+				<div><small> No AI was used in the making of this tool. I would rather gargle gravel <3.</small></div>
+				<div><small> Credit goes to Pawborough. </small></div>
+		</footer>
 
+	</body>
 
 
 

@@ -1245,7 +1245,7 @@ let pbColors = [
 		"hex": "#345E40"
 	},
 	{
-		"color":"Mahi-mahi",
+		"color":"Mahimahi",
 		"hue": "Green",
 		"saturation": "Saturated",
 		"sortSaturation": 1,
@@ -1692,7 +1692,7 @@ let pbColors = [
 		"sortSaturation": 2,
 		"luminosity": "Dark",
 		"sortLuminosity": 3,
-		"hex	": "#324d77"
+		"hex": "#324d77"
 	},
 	{
 		"color":"Betta",
@@ -2129,9 +2129,20 @@ let pbColors = [
 
 ]
 
+function copyFunction() {
+  // Get the text field
+  var copyText = document.getElementById("forumBox");
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.textContent);
+
+  // Alert the copied text
+  alert("Text Copied!");
+} 
+
 
 function generate(){
-console.log('version 1.2')
+console.log('version 1.3')
 
 // reset array
 let showcaseColors = []
@@ -2370,6 +2381,18 @@ for (var i = 0; i < 3; i++) {
 		showDesatSymbol = true;
 	} 
 
+	const forumPaste = document.createElement("div");
+	let forumString = "";
+
+
+// Fill userInput Label if present
+	const userInput = document.createElement("h2");
+	userInput.textContent=document.getElementById("userInput").value 
+	//console.log(userInput)
+	if (userInput != "") {
+		userInput.classList.add('center');
+		colorSet.appendChild(userInput)
+	}
 
 	// Returns the colors
 
@@ -2381,6 +2404,7 @@ for (var i = 0; i < 3; i++) {
 		colorBox.className	= "box"
 		colorBox.style.backgroundColor = showcaseColors[i].hex
 
+
 		const lineData = document.createElement("span")
 		lineData.className	= "lineData"
 
@@ -2388,6 +2412,9 @@ for (var i = 0; i < 3; i++) {
 		const colorText = document.createElement("span")
 		colorText.innerText = showcaseColors[i].color;
 		colorText.className = "colorLineText"
+
+		//forumpaste
+		forumString += `<p><span style="color: ${showcaseColors[i].hex};"> █ </span> ${showcaseColors[i].color} </p><br>`
 
 		colorLine.appendChild(colorBox)
 		colorBox.appendChild(lineData)
@@ -2471,8 +2498,21 @@ for (var i = 0; i < 3; i++) {
 
 		colorSet.appendChild(colorLine);
 
+
+	//Forum Paste
+		//forumPaste.textContent += colorLine.outerHTML;
 	}
-		//document.getElementById("Card_borough").textContent = borough.value	
+	/* Deprecated
+	forumPasteString = forumPaste.innerHTML.toString();
+	forumPasteString = forumPasteString.replace('class="box"',
+		`style='border-color: black; border: 1px solid black; height: 16px; width: 28px; border-radius: 4px; margin-left: 1em; backgroundColor: ;'`);
+	*/
+
+	forumPaste.textContent = forumString;
+
+	forumBox.appendChild(forumPaste);		
+
+
 
 }
 
