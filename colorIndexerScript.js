@@ -2131,6 +2131,8 @@ let pbColors = [
 
 
 function generate(){
+console.log('version 1.2')
+
 // reset array
 let showcaseColors = []
 
