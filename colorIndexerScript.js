@@ -1692,7 +1692,7 @@ let pbColors = [
 		"sortSaturation": 2,
 		"luminosity": "Dark",
 		"sortLuminosity": 3,
-		"hex": "#324d77"
+		"hex	": "#324d77"
 	},
 	{
 		"color":"Betta",
@@ -2161,8 +2161,6 @@ let showcaseColors = []
 	let sortPrimary = document.getElementById("SortPrimary").value		
 	let sortSecondary = document.getElementById("SortSecondary").value		
 
-	console.log(sortSecondary)
-
 
 //Convert to arrays
 	selectedHue = []
@@ -2396,7 +2394,6 @@ for (var i = 0; i < 3; i++) {
 	// add hue boxes if true
 
 		if (showHueAttributes == true) {
-			console.log("colorisgo")
 
 			if(showcaseColors[i].hue === "Greyscale"){
 				const symbol = document.getElementById("greyscaleSymbol").cloneNode(true);
