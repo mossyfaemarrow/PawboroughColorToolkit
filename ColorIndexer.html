@@ -16,19 +16,23 @@
 
 	</head>
 	<body>
+
+
 		<div class="container-fluid">
+
 		 	<div class="row">
 
-			    <div class="col-sm-3">
+			    <div class="col-sm-4">
 					<div id="colorSet">
 					</div>
+					<br>
 			    </div>
 
-			    <div class="col-sm-3">
+			    <div class="col-sm-2">
 						<form id="Hue">Hue:<br>
 
 						<!--<input type="checkbox" name="Hue" id="Hue" multiple>-->
-							<input type="checkbox" id="Greyscale" name="Greyscale" value="Greyscale">
+							<input type="checkbox" id="Greyscale" name="Greyscale" value="Greyscale" checked>
 							<label for="Greyscale">Greyscale</label><br>
 
 							<input type="checkbox" id="Brown" name="Brown" value="Brown">
@@ -70,7 +74,7 @@
 							<input type="checkbox" id="Saturated" name="Saturated" value="Saturated">
 							<label for="Saturated">Saturated</label><br>
 
-							<input type="checkbox" id="Desaturated" name="Desaturated" value="Desaturated">
+							<input type="checkbox" id="Desaturated" name="Desaturated" value="Desaturated" checked>
 							<label for="Desaturated">Desaturated</label><br>
 
 							<input type="checkbox" id="Universal" name="Universal" value="Universal">
@@ -84,7 +88,7 @@
 
 
 						<!--<input type="checkbox" name="Luminosity" id="Luminosity">-->
-							<input type="checkbox" id="Light" name="Light" value="Light">
+							<input type="checkbox" id="Light" name="Light" value="Light" checked>
 							<label for="Light">Light</label><br>
 
 							<input type="checkbox" id="Medium" name="Medium" value="Medium">
@@ -103,7 +107,7 @@
 						<label for="SortPrimary"></label>
 
 						<select name="SortPrimary" id="SortPrimary">
-							<option value="Hue">Hue</option>
+							<option value="Hue" selected>Hue</option>
 							<option value="Saturation">Saturation</option>
 							<option value="Luminosity">Luminosity</option>
 						</select>
@@ -113,15 +117,29 @@
 
 						<select name="SortSecondary" id="SortSecondary">
 							<option value="Hue">Hue</option>
-							<option value="Saturation">Saturation</option>
+							<option value="Saturation" selected>Saturation</option>
 							<option value="Luminosity">Luminosity</option>
 						</select>		
 
 						<br>
-						<input type="checkbox" id="showColorAttributes" name="showColorAttributes" value="showColorAttributes">
-						<label for="showColorAttributes">Show Color Attributes?</label><br>						
+						<input type="checkbox" id="showColorAttributes" name="showColorAttributes" value="showColorAttributes" checked>
+						<label for="showColorAttributes">Show Color Attributes?</label><br>
 
-					<br><br>
+						<input type="checkbox" id="showDesatSymbol" name="showDesatSymbol" value="showDesatSymbol">
+						<label for="showDesatSymbol">Show Desaturation Symbol?</label><br>	
+
+						<input type="checkbox" id="showHueAttributes" name="showHueAttributes" value="showHueAttributes">
+						<label for="showHueAttributes">Show Color Hue?</label><br><br>	
+
+						<p>If Primary or Secondary sort is Saturation,</p>
+						<input type="checkbox" id="saturationReverse" name="saturationReverse" value="saturationReverse">
+						<label for="saturationReverse">Reverse Saturation Sort Order?</label><br><br>	
+
+						<p>If Primary or Secondary sort is Luminosity,</p>
+						<input type="checkbox" id="luminosityReverse" name="luminosityReverse" value="luminosityReverse">
+						<label for="luminosityReverse">Reverse Luminosity Sort Order?</label><br>						
+
+					<br><br>	
 					<button id="Generator" class="translate-middle" onclick="generate()">Generate</button>
 					<!--<button id="Reset" class="translate-middle" onclick="window.location.reload()">Reset</button>-->				
 
@@ -137,7 +155,23 @@
 						<span class="cooperativeSVG">Dark <svg id=colorSymbolDarkBasis viewbox="0, 0, 16, 16"><path class="colorSymbolDark"></path><circle id="Ellipse 65" cx="8.00043" cy="8.00022" r="4.00022" fill="currentColor"></circle></span>
 						<br>
 						<span class="cooperativeSVG">Saturated <svg id=colorSymbolSaturatedBasis viewbox="0, 0, 16, 16"><path class="colorSymbolSaturated"></path></svg></span>
-						<br>						
+						<br>
+						<span class="cooperativeSVG">Desaturated <svg id=colorSymbolDesaturatedBasis viewbox="0, 0, 30, 42"><path class="colorSymbolDesaturated"></path></svg></span>
+						<br><br>
+
+						<div id= "keyColors">
+							<div id="greyscaleSymbol"></div>
+							<div id="brownSymbol"></div>
+							<div id="redSymbol"></div>
+							<div id="orangeSymbol"></div>
+							<div id="yellowSymbol"></div>
+							<div id="greenSymbol"></div>
+							<div id="tealSymbol"></div>
+							<div id="blueSymbol"></div>
+							<div id="purpleSymbol"></div>
+							<div id="pinkSymbol"></div>
+
+						</div>						
 
 					</div>
 

@@ -125,6 +125,23 @@ div{
   fill: currentColor;
 }
 
+
+/*
+Source - https://stackoverflow.com/a/30712432
+Posted by web-tiki, modified by community. See post 'Timeline' for change history
+Retrieved 2026-08-12, License - CC BY-SA 3.0
+*/
+.colorSymbolDesaturated{  
+  opacity: 1;
+  d: path(
+    "M15 3 Q16.5 6.8 25 18 A12.8 12.8 0 1 1 5 18 Q13.5 6.8 15 3z");
+  fill: transparent;
+  stroke: currentColor; 
+  stroke-width: 4px ;
+  width: 15px;
+  height: 16px;
+}
+
 #colorSymbolSaturatedBasis{  
 /*
   right: 130px;
@@ -148,6 +165,52 @@ div{
 
   border-radius: 8px !important;
   background-color: #fffdf8;
+}
+
+#keyColors div{
+  height: 22px; 
+  width: 16px;
+  display: inline-block;
+}
+
+.colorPalette{
+    height: 16px; 
+    width: 14px; 
+    border-radius: 4px;
+    margin-left: 1em;   
+    right: 10%; 
+    position: absolute;
+}
+
+#greyscaleSymbol{
+  background-color: rgb(39, 39, 39) !important;
+}
+#brownSymbol{
+  background-color: rgb(97, 68, 51) !important;
+}
+#redSymbol{
+  background-color: rgb(214, 61, 47) !important;
+}
+#orangeSymbol{
+  background-color: rgb(255, 109, 1) !important;
+}
+#yellowSymbol{
+  background-color: rgb(251, 188, 4) !important;
+}
+#greenSymbol{
+  background-color: rgb(40, 130, 63) !important;
+}
+#tealSymbol{
+  background-color: rgb(70, 189, 198) !important;
+}
+#blueSymbol{
+  background-color: rgb(66, 133, 244) !important;
+}
+#purpleSymbol{
+  background-color: rgb(127, 93, 216) !important;
+}
+#pinkSymbol{
+  background-color: rgb(193, 56, 114) !important;
 }
 
 

@@ -8,1643 +8,2122 @@ colorSymbolMediumPath=
 
 // initialize pbColors Constructor
 
+/* Sorting values:
+Sat 0: Universal
+Sat 1: Saturated
+Sat 2: Desaturated
+
+/* Sorting values:
+Lumi 1: Light
+Lumi 2: Medium
+Lumi 3: Dark
+*/
+
 let pbColors = [
 	{
 		"color":"Snowdrop",	
 		"hue": "Greyscale",	
 		"saturation": "Universal",
+		"sortSaturation": 0,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#FFFFFF"
 	},
 	{
 		"color":"Jasmine",	
 		"hue": "Greyscale",	
 		"saturation": "Universal",
+		"sortSaturation": 0,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#FFFFFF"
 	},
 	{
 		"color":"Diamond",	
 		"hue": "Greyscale",	
 		"saturation": "Universal",
+		"sortSaturation": 0,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#f3fbfc"
 	},
 	{
 		"color":"Panda",	
 		"hue": "Greyscale",	
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#e6e6e6"
 	},
 	{
 		"color":"Birch",	
 		"hue": "Greyscale",	
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#E6E5E0"
 	},
 	{
 		"color":"Heron",	
 		"hue": "Greyscale",	
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#E2E7EB"
 	},
 	{
 		"color":"Moon",	
 		"hue": "Greyscale",	
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#DDDDDD"
 	},
 	{
 		"color":"Moonflower",	
 		"hue": "Greyscale",	
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#ECE8DF"
 	},
 	{
 		"color":"Possum",	
 		"hue": "Greyscale",	
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#C5C5C5"
 	},
 	{
 		"color":"Chinchilla",	
 		"hue": "Greyscale",	
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#BCB8B5"
 	},
 	{
 		"color":"Silver",	
 		"hue": "Greyscale",	
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#C1C4C9"
 	},
 	{
 		"color":"Frost",	
 		"hue": "Greyscale",	
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#B5B7C4"
 	},
 	{
 		"color":"Ash",	
 		"hue": "Greyscale",	
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#9C9CA0"
 	},
 	{
 		"color":"Quail",	
 		"hue": "Greyscale",	
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#7D7D7D"
 	},
 	{
 		"color":"Dust",	
 		"hue": "Greyscale",	
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#635C5C"
 	},
 	{
 		"color":"Cinder",	
 		"hue": "Greyscale",	
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#4E484E"
 	},
 	{
 		"color":"Iron",	
 		"hue": "Greyscale",	
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#464646"
 	},
 	{
 		"color":"Beetle",	
 		"hue": "Greyscale",	
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#2F2F2F"
 	},
 	{
 		"color":"Swallowtail",	
 		"hue": "Greyscale",	
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#212121"
 	},
 	{
 		"color":"Raven",	
 		"hue": "Greyscale",	
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#1D2022"
 	},
 	{
 		"color":"Eclipse",	
 		"hue": "Greyscale",	
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#171516"
 	},
 	{
 		"color":"Sand",
 		"hue": "Brown",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#ECCCAF"
 	},
 	{
 		"color":"Shrew",
 		"hue": "Brown",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#d8b89e"
 	},
 	{
 		"color":"Hound",
 		"hue": "Brown",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#D8B89E"
 	},
 	{
 		"color":"Bean",
 		"hue": "Brown",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#C1936F"
 	},
 	{
 		"color":"Silt",
 		"hue": "Brown",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#AB8D75"
 	},
 	{
 		"color":"Sparrow",
 		"hue": "Brown",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#ae8c67"
 	},
 	{
 		"color":"Leaf",
 		"hue": "Brown",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#AC8869"
 	},
 	{
 		"color":"Mink",
 		"hue": "Brown",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#AC8878"
 	},
 	{
 		"color":"Hazelnut",
 		"hue": "Brown",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#826048"
 	},
 	{
 		"color":"Buckeye",
 		"hue": "Brown",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#845C4F"
 	},
 	{
 		"color":"Bear",
 		"hue": "Brown",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#6E4937"
 	},
 	{
 		"color":"Bramble",
 		"hue": "Brown",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#4B3428"
 	},
 	{
 		"color":"Hawk",
 		"hue": "Brown",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#45352E"
 	},
 	{
 		"color":"Puffin",
 		"hue": "Brown",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#E6DDD1"
 	},
 	{
 		"color":"Coconut",
 		"hue": "Brown",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#E1D4C1"
 	},
 	{
 		"color":"Oat",
 		"hue": "Brown",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#DCD4AF"
 	},
 	{
 		"color":"Bone",
 		"hue": "Brown",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#D9D2BB"
 	},
 	{
 		"color":"Hare",
 		"hue": "Brown",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#CEBEAF"
 	},
 	{
 		"color":"Cassia",
 		"hue": "Brown",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#C4B8AC"
 	},
 	{
 		"color":"Fawn",
 		"hue": "Brown",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#C2B79E"
 	},
 	{
 		"color":"Smoke",
 		"hue": "Brown",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#938A7B"
 	},
 	{
 		"color":"Mouse",
 		"hue": "Brown",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#8C867F"
 	},
 	{
 		"color":"Coyote",
 		"hue": "Brown",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#50483B"
 	},
 	{
 		"color":"Charcoal",
 		"hue": "Brown",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#35322D"
 	},
 	{
 		"color":"Bushpig",
 		"hue": "Brown",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#3A2C23"
 	},
 	{
 		"color":"Licorice",
 		"hue": "Brown",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#2D2823"
 	},
 	{
 		"color":"Axolotl",
 		"hue": "Red",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#FDB0AF"
 	},
 	{
 		"color":"Coral",
 		"hue": "Red",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#F0807F"
 	},
 	{
 		"color":"Hawthorn",
 		"hue": "Red",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#D74943"
 	},
 	{
 		"color":"Mushroom",
 		"hue": "Red",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#D94047"
 	},
 	{
 		"color":"Pomegranate",
 		"hue": "Red",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#C94250"
 	},
 	{
 		"color":"Apple",
 		"hue": "Red",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#C0393A"
 	},
 	{
 		"color":"Tulip",
 		"hue": "Red",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#A92643"
 	},
 	{
 		"color":"Lychee",
 		"hue": "Red",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#a93d3b"
 	},
 	{
 		"color":"Radish",
 		"hue": "Red",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#832c25"
 	},
 	{
 		"color":"Ruby",
 		"hue": "Red",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#7D121E"
 	},
 	{
 		"color":"Blood",
 		"hue": "Red",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#761910"
 	},
 	{
 		"color":"Lotus",
 		"hue": "Red",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#FDD1BF"
 	},
 	{
 		"color":"Peach",
 		"hue": "Red",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#F1B49E"
 	},
 	{
 		"color":"Squid",
 		"hue": "Red",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#E88F77"
 	},
 	{
 		"color":"Salmon",
 		"hue": "Red",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#FF8E6A"
 	},
 	{
 		"color":"Hornet",
 		"hue": "Red",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#ea724b"
 	},
 	{
 		"color":"Deer",
 		"hue": "Red",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#D26147"
 	},
 	{
 		"color":"Poppy",
 		"hue": "Red",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#BD4D32"
 	},
 	{
 		"color":"Squirrel",
 		"hue": "Red",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#A55444"
 	},
 	{
 		"color":"Ladybug",
 		"hue": "Red",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#B04E38"
 	},
 	{
 		"color":"Fox",
 		"hue": "Red",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#8E4424"
 	},
 	{
 		"color":"Maple",
 		"hue": "Red",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#5e211c"
 	},
 	{
 		"color":"Hellebore",
 		"hue": "Red",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#7F2936"
 	},
 	{
 		"color":"Beetroot",
 		"hue": "Red",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#5E2429"
 	},
 	{
 		"color":"Grapefruit",
 		"hue": "Orange",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#FBBE85"
 	},
 	{
 		"color":"Persimmon",
 		"hue": "Orange",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#FF9F56"
 	},
 	{
 		"color":"Autumn",
 		"hue": "Orange",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#F5A248"
 	},
 	{
 		"color":"Tamarin",
 		"hue": "Orange",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#F7AF40"
 	},
 	{
 		"color":"Fire",
 		"hue": "Orange",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#DF8B27"
 	},
 	{
 		"color":"Goldfish",
 		"hue": "Orange",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#EB8C3A"
 	},
 	{
 		"color":"Daybreak",
 		"hue": "Orange",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#FA753D"
 	},
 	{
 		"color":"Sweetpotato",
 		"hue": "Orange",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#C66639"
 	},
 	{
 		"color":"Rooster",
 		"hue": "Orange",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#ac5623"
 	},
 	{
 		"color":"Seed",
 		"hue": "Orange",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#C0672D"
 	},
 	{
 		"color":"Sap",
 		"hue": "Orange",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#7B4228"
 	},
 	{
 		"color":"Yuca",
 		"hue": "Orange",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#F7D9B5"
 	},
 	{
 		"color":"Pumpkin",
 		"hue": "Orange",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#f3c78a"
 	},
 	{
 		"color":"Apricot",
 		"hue": "Orange",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#DEB985"
 	},
 	{
 		"color":"Carrot",
 		"hue": "Orange",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#D69865"
 	},
 	{
 		"color":"Clay",
 		"hue": "Orange",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#cc986f"
 	},
 	{
 		"color":"Sun",
 		"hue": "Orange",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#D78B36"
 	},
 	{
 		"color":"Butternut",
 		"hue": "Orange",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#C07A37"
 	},
 	{
 		"color":"Ginger",
 		"hue": "Orange",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#D5794C"
 	},
 	{
 		"color":"Tangerine",
 		"hue": "Orange",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#C57448"
 	},
 	{
 		"color":"Killdeer",
 		"hue": "Orange",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#B17553"
 	},
 	{
 		"color":"Yam",
 		"hue": "Orange",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#A86E48"
 	},
 	{
 		"color":"Cinnamon",
 		"hue": "Orange",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#9F6435"
 	},
 	{
 		"color":"Flame",
 		"hue": "Orange",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#AD5935"
 	},
 	{
 		"color":"Nutmeg",
 		"hue": "Orange",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#8E5236"
 	},
 	{
 		"color":"Sugar",
 		"hue": "Yellow",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#FEFBF0"
 	},
 	{
 		"color":"Cornsilk",
 		"hue": "Yellow",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#FDF6DD"
 	},
 	{
 		"color":"Vanilla",
 		"hue": "Yellow",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#FFF5C4"
 	},
 	{
 		"color":"Thyme",
 		"hue": "Yellow",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#F8F8B4"
 	},
 	{
 		"color":"Banana",
 		"hue": "Yellow",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#F2ECA1"
 	},
 	{
 		"color":"Durian",
 		"hue": "Yellow",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#fae592"
 	},
 	{
 		"color":"Canary",
 		"hue": "Yellow",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#F2E141"
 	},
 	{
 		"color":"Daffodil",
 		"hue": "Yellow",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#edd962"
 	},
 	{
 		"color":"Yellowjacket",
 		"hue": "Yellow",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#d2b038"
 	},
 	{
 		"color":"Bellpepper",
 		"hue": "Yellow",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#FFC71C"
 	},
 	{
 		"color":"Thunder",
 		"hue": "Yellow",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#F0B843"
 	},
 	{
 		"color":"Mango",
 		"hue": "Yellow",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#F8BA56"
 	},
 	{
 		"color":"Amber",
 		"hue": "Yellow",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#D3A953"
 	},
 	{
 		"color":"Squash",
 		"hue": "Yellow",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#BA8342"
 	},
 	{
 		"color":"Sheep",
 		"hue": "Yellow",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#f0ecdc"
 	},
 	{
 		"color":"Summer",
 		"hue": "Yellow",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#FCEFD6"
 	},
 	{
 		"color":"Honeysuckle",
 		"hue": "Yellow",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#F6E6BE"
 	},
 	{
 		"color":"Bee",
 		"hue": "Yellow",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#e3d196"
 	},
 	{
 		"color":"Root",
 		"hue": "Yellow",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#e9ddb5"
 	},
 	{
 		"color":"Flaxseed",
 		"hue": "Yellow",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#DFCD89"
 	},
 	{
 		"color":"Dandelion",
 		"hue": "Yellow",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#E7BE6E"
 	},
 	{
 		"color":"Honey",
 		"hue": "Yellow",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#d5b067"
 	},
 	{
 		"color":"Turmeric",
 		"hue": "Yellow",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#d29636"
 	},
 	{
 		"color":"Gold",
 		"hue": "Yellow",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#C6B064"
 	},
 	{
 		"color":"Peanut",
 		"hue": "Yellow",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#90774C"
 	},
 	{
 		"color":"Oak",
 		"hue": "Yellow",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#81684E"
 	},
 	{
 		"color":"Flora",
 		"hue": "Green",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#A2EFA2"
 	},
 	{
 		"color":"Mint",
 		"hue": "Green",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#BBDFC0"
 	},
 	{
 		"color":"Hummingbird",
 		"hue": "Green",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#80D58C"
 	},
 	{
 		"color":"Anise",
 		"hue": "Green",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#DBE380"
 	},
 	{
 		"color":"Parakeet",
 		"hue": "Green",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#BADD29"
 	},
 	{
 		"color":"Caterpillar",
 		"hue": "Green",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#63bd4f"
 	},
 	{
 		"color":"Chameleon",
 		"hue": "Green",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#62AB89"
 	},
 	{
 		"color":"Rosemary",
 		"hue": "Green",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#489469"
 	},
 	{
 		"color":"Emerald",
 		"hue": "Green",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#147840"
 	},
 	{
 		"color":"Sage",
 		"hue": "Green",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#58835F"
 	},
 	{
 		"color":"Peyote",
 		"hue": "Green",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#577560"
 	},
 	{
 		"color":"Creeper",
 		"hue": "Green",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#5A8030"
 	},
 	{
 		"color":"Parsley",
 		"hue": "Green",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#306420"
 	},
 	{
 		"color":"Holly",
 		"hue": "Green",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#345E40"
 	},
 	{
 		"color":"Mahi-mahi",
 		"hue": "Green",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#0D3828"
 	},
 	{
 		"color":"Onion",
 		"hue": "Green",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#DBE2B8"
 	},
 	{
 		"color":"Spring",
 		"hue": "Green",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#D0E8B8"
 	},
 	{
 		"color":"Pistachio",
 		"hue": "Green",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#B5D59B"
 	},
 	{
 		"color":"Frog",
 		"hue": "Green",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#B6C27F"
 	},
 	{
 		"color":"Eel",
 		"hue": "Green",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#D1CC66"
 	},
 	{
 		"color":"Tea",
 		"hue": "Green",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#A7B761"
 	},
 	{
 		"color":"Locust",
 		"hue": "Green",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#9C9943"
 	},
 	{
 		"color":"Eucalyptus",
 		"hue": "Green",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#838160"
 	},
 	{
 		"color":"Toad",
 		"hue": "Green",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#5F5C34"
 	},	
 	{
 		"color":"Spirit",
 		"hue": "Teal",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#F2FDFE"
 	},
 	{
 		"color":"Seafoam",
 		"hue": "Teal",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#A9E3D9"
 	},	
 	{
 		"color":"Wind",
 		"hue": "Teal",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#A8EACF"
 	},
 	{
 		"color":"Lightning",
 		"hue": "Teal",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#56DBC7"
 	},
 	{
 		"color":"Anemone",
 		"hue": "Teal",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#58d6e1"
 	},
 	{
 		"color":"Meteor",
 		"hue": "Teal",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#8dc3c1"
 	},
 	{
 		"color":"Rainwash",
 		"hue": "Teal",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#72CBAE"
 	},
 	{
 		"color":"Jade",
 		"hue": "Teal",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#5B9890"
 	},
 	{
 		"color":"Puya",
 		"hue": "Teal",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#016064"
 	},
 	{
 		"color":"Agate",
 		"hue": "Teal",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#163444"
 	},
 	{
 		"color":"Bloodstone",
 		"hue": "Teal",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#1d3d42"
 	},
 	{
 		"color":"Egg",
 		"hue": "Teal",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#afccca"
 	},
 	{
 		"color":"Winter",
 		"hue": "Teal",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#b8e0e5"
 	},
 	{
 		"color":"Hydrangea",
 		"hue": "Teal",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#C1D6E0"
 	},
 	{
 		"color":"Gourami",
 		"hue": "Teal",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#8ec2c9"
 	},
 	{
 		"color":"Mist",
 		"hue": "Teal",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#C1CCCF"
 	},
 	{
 		"color":"Bismuth",
 		"hue": "Teal",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#939FA6"
 	},
 	{
 		"color":"Silverfish",
 		"hue": "Teal",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#788185"
 	},
 	{
 		"color":"Treeswallow",
 		"hue": "Teal",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#69767F"
 	},
 	{
 		"color":"Seabed",
 		"hue": "Teal",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#3e5c76"
 	},
 	{
 		"color":"Mantaray",
 		"hue": "Teal",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#132930"
 	},
 	{
 		"color":"Hail",
 		"hue": "Blue",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#dfeff8"
 	},
 	{
 		"color":"Sky",
 		"hue": "Blue",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#B0C5F9"
 	},
 	{
 		"color":"Chrysalis",
 		"hue": "Blue",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#d1e4fe"
 	},
 	{
 		"color":"Larkspur",
 		"hue": "Blue",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#86A4F0"
 	},
 	{
 		"color":"Fairywren",
 		"hue": "Blue",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#6190ec"
 	},
 	{
 		"color":"Damselfly",
 		"hue": "Blue",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#52ACE8"
 	},
 	{
 		"color":"Kingfisher",
 		"hue": "Blue",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#1D7ADB"
 	},
 	{
 		"color":"Dragonslug",
 		"hue": "Blue",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#214B98"
 	},
 	{
 		"color":"Sapphire",
 		"hue": "Blue",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#12317d"
 	},
 	{
 		"color":"Peafowl",
 		"hue": "Blue",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#203F7C"
 	},
 	{
 		"color":"Nightfall",
 		"hue": "Blue",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#102554"
 	},
 	{
 		"color":"Ice",
 		"hue": "Blue",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#f0f0fd"
 	},
 	{
 		"color":"Feather",
 		"hue": "Blue",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#BDD0E4"
 	},
 	{
 		"color":"Storm",
 		"hue": "Blue",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#C1C7D7"
 	},
 	{
 		"color":"River",
 		"hue": "Blue",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#98ACCB"
 	},
 	{
 		"color":"Arctic",
 		"hue": "Blue",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#82b0ca"
 	},
 	{
 		"color":"Ocean",
 		"hue": "Blue",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#7596b7"
 	},
 	{
 		"color":"Mackerel",
 		"hue": "Blue",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#5F7491"
 	},
 	{
 		"color":"Lapis",
 		"hue": "Blue",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#324d77"
 	},
 	{
 		"color":"Betta",
 		"hue": "Blue",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#4f5574"
 	},
 	{
 		"color":"Whale",
 		"hue": "Blue",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#313752"
 	},
 	{
 		"color":"Midnight",
 		"hue": "Blue",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#282836"
 	},
 	{
 		"color":"Magpie",
 		"hue": "Blue",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#24242B"
 	},
 	{
 		"color":"Stardust", 
 		"hue": "Purple",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#EDEAFF"
 	},
 	{
 		"color":"Hyacinth", 
 		"hue": "Purple",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#E5D6FF"
 	},
 	{
 		"color":"Catmint", 
 		"hue": "Purple",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#F1CAFF"
 	},
 	{
 		"color":"Foxglove", 
 		"hue": "Purple",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#CBA0D5"
 	},
 	{
 		"color":"Aster", 
 		"hue": "Purple",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#9A4BB4"
 	},
 	{
 		"color":"Pokeweed", 
 		"hue": "Purple",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#702568"
 	},
 	{
 		"color":"Bellflower", 
 		"hue": "Purple",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#8B7FE8"
 	},
 	{
 		"color":"Wolfsbane", 
 		"hue": "Purple",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#7C56CD"
 	},
 	{
 		"color":"Huckleberry", 
 		"hue": "Purple",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#4b49a9"
 	},
 	{
 		"color":"Nightshade", 
 		"hue": "Purple",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#523281"
 	},
 	{
 		"color":"Fig", 
 		"hue": "Purple",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#60415F"
 	},
 	{
 		"color":"Plum", 
 		"hue": "Purple",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#412b49"
 	},
 	{
 		"color":"Urchin", 
 		"hue": "Purple",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#2f0048"
 	},
 	{
 		"color":"Morning", 
 		"hue": "Purple",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#c4bdcc"
 	},
 	{
 		"color":"Heather", 
 		"hue": "Purple",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#ccc4eb"
 	},
 	{
 		"color":"Twilight", 
 		"hue": "Purple",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#C9AAD0"
 	},
 	{
 		"color":"Lavender", 
 		"hue": "Purple",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#baa7de"
 	},
 	{
 		"color":"Wisteria", 
 		"hue": "Purple",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#A4ABDF"
 	},
 	{
 		"color":"Taro", 
 		"hue": "Purple",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#8C78B3"
 	},
 	{
 		"color":"Iris", 
 		"hue": "Purple",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#6F5F86"
 	},
 	{
 		"color":"Thistle", 
 		"hue": "Purple",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#8C7C8C"
 	},
 	{
 		"color":"Rain", 
 		"hue": "Purple",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#58566a"
 	},
 	{
 		"color":"Shadow", 
 		"hue": "Purple",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#3E3648"
 	},
 	{
 		"color":"Currant", 
 		"hue": "Purple",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#372842"
 	},
 	{
 		"color":"Sakura",
 		"hue": "Pink",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#ffeff5"
 	},
 	{
 		"color":"Quartz",
 		"hue": "Pink",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#f6d0e2"
 	},
 	{
 		"color":"Peony",
 		"hue": "Pink",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#FDC6D2"
 	},
 	{
 		"color":"Hibiscus",
 		"hue": "Pink",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#F6BDD1"
 	},
 	{
 		"color":"Carnation",
 		"hue": "Pink",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#FFB0CC"
 	},
 	{
 		"color":"Rose",
 		"hue": "Pink",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#E67C98"
 	},
 	{
 		"color":"Watermelon",
 		"hue": "Pink",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#FA6B79"
 	},
 	{
 		"color":"Dragonfruit",
 		"hue": "Pink",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#F54780"
 	},
 	{
 		"color":"Begonia",
 		"hue": "Pink",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#C45C86"
 	},
 	{
 		"color":"Orchid",
 		"hue": "Pink",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#BE378F"
 	},
 	{
 		"color":"Winecup",
 		"hue": "Pink",
 		"saturation": "Saturated",
+		"sortSaturation": 1,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#B00B69"
 	},
 	{
 		"color":"Lily",
 		"hue": "Pink",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#f8e7df"
 	},
 	{
 		"color":"Pearl",
 		"hue": "Pink",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Light",
+		"sortLuminosity": 1,
 		"hex": "#ead6d1"
 	},
 	{
 		"color":"Magnolia",
 		"hue": "Pink",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#DDB4B2"
 	},
 	{
 		"color":"Lilac",
 		"hue": "Pink",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#D0B5B2"
 	},
 	{
 		"color":"Waxflower",
 		"hue": "Pink",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#EBA0A0"
 	},
 	{
 		"color":"Acai",
 		"hue": "Pink",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Medium",
+		"sortLuminosity": 2,
 		"hex": "#90475C"
 	},
 	{
 		"color":"Mulberry",
 		"hue": "Pink",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#64153C"
 	},
 	{
 		"color":"Dahlia",
 		"hue": "Pink",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#520537"
 	},
 	{
 		"color":"Grape",
 		"hue": "Pink",
 		"saturation": "Desaturated",
+		"sortSaturation": 2,
 		"luminosity": "Dark",
+		"sortLuminosity": 3,
 		"hex": "#4C2B3C"
 	}
 
@@ -1684,6 +2163,7 @@ let showcaseColors = []
 
 	console.log(sortSecondary)
 
+
 //Convert to arrays
 	selectedHue = []
 	selectedSaturation = []
@@ -1714,6 +2194,52 @@ for (var i = 0; i < 3; i++) {
 }
  console.log(selectedLuminosity)
 
+// ensure selections
+// load bearing console log errors T-T
+	try{
+		(selectedHue[0].value === null)
+	} catch(error) {
+		let colorSet = document.getElementById("colorSet")
+		colorSet.textContent = "No results: Please make sure a Hue is selected.";
+		console.log(coloSet.textContent)
+  	}
+
+	try{
+		(selectedSaturation[0].value === null)
+	} catch(error) {
+		let colorSet = document.getElementById("colorSet")
+		colorSet.textContent = "No results: Please make sure a Saturation is selected.";
+		console.log(coloSet.textContent)
+  	}
+
+	try{
+		(selectedLuminosity[0].value === null)
+	} catch(error) {
+		let colorSet = document.getElementById("colorSet")
+		colorSet.textContent = "No results: Please make sure a Luminosity is selected.";
+		console.log(coloSet.textContent)
+  	}  	
+
+	if(document.getElementById("Greyscale").checked === false && document.getElementById("Universal").checked === true 
+			&& document.getElementById("Saturated").checked === false && document.getElementById("Desaturated").checked === false){
+		let colorSet = document.getElementById("colorSet")
+		colorSet.textContent = "No results: Only Greyscale has colors with Universal Saturation.";
+		console.log(coloSet.textContent)
+	}
+
+	if(document.getElementById("Greyscale").checked === true && document.getElementById("Saturated").checked === true 
+			&& document.getElementById("Universal").checked === false && document.getElementById("Desaturated").checked === false){
+			try{
+				(selectedHue[1].value === null)
+			} catch(error) {
+				let colorSet = document.getElementById("colorSet")
+				colorSet.textContent = "No results: Greyscale does not have any Saturated colors";
+				console.log(coloSet.textContent)
+		  	}  	
+	}
+
+
+// main
 
 
 	switch(sortPrimary){
@@ -1722,6 +2248,7 @@ for (var i = 0; i < 3; i++) {
 			for (var h = 0; h < selectedHue.length; h++) {
 				for (var s = 0; s < selectedSaturation.length; s++) {
 					for (var l = 0; l < selectedLuminosity.length; l++) {
+
 						if(selectedHue[h] === pbColors[i].hue){
 							if(selectedSaturation[s] === pbColors[i].saturation){
 								if(selectedLuminosity[l] === pbColors[i].luminosity){
@@ -1736,9 +2263,10 @@ for (var i = 0; i < 3; i++) {
 	break;
 	case "Saturation":
 		for (var i = 0; i < pbColors.length; i++) {
-			for (var h = 0; h < selectedHue.length; h++) {
 				for (var s = 0; s < selectedSaturation.length; s++) {
-					for (var l = 0; l < selectedLuminosity.length; l++) {
+					for (var h = 0; h < selectedHue.length; h++) {
+						for (var l = 0; l < selectedLuminosity.length; l++) {
+
 						if(selectedSaturation[s] === pbColors[i].saturation){
 							if(selectedLuminosity[l] === pbColors[i].luminosity){
 								if(selectedHue[h] === pbColors[i].hue){
@@ -1756,6 +2284,7 @@ for (var i = 0; i < 3; i++) {
 			for (var h = 0; h < selectedHue.length; h++) {
 				for (var s = 0; s < selectedSaturation.length; s++) {
 					for (var l = 0; l < selectedLuminosity.length; l++) {
+
 						if(selectedLuminosity[l] === pbColors[i].luminosity){
 							if(selectedSaturation[s] === pbColors[i].saturation){
 								if(selectedHue[h] === pbColors[i].hue){
@@ -1770,17 +2299,49 @@ for (var i = 0; i < 3; i++) {
 	break;
 	}
 
-	/*
+	
 	// sort???
-	if (sortPrimary == "hue") {
-		showcaseColors.sort((a, b) => a.hue.localeCompare(b.hue));
-	} else if (sortPrimary == "Saturation"){
-		showcaseColors.sort((a, b) => a.saturation.localeCompare(b.saturation));
-	} else {
-		showcaseColors.sort((a, b) => a.luminosity.localeCompare(b.luminosity));
+	/*
+	if (sortPrimary == "Saturation"){
+		showcaseColors.sort((a, b) => a.sortSaturation > b.sortSaturation);
+	} else if (sortPrimary == "Luminosity"){
+		showcaseColors.sort((a, b) => a.sortLuminosity > b.sortLuminosity);
 	}
-	*/
+	
+*/
+	let saturationReverse = document.getElementById("saturationReverse").checked
 
+	let luminosityReverse = document.getElementById("luminosityReverse").checked
+
+// Sort Secondary
+	if (sortSecondary == "Saturation"){
+		if(saturationReverse == false){
+			showcaseColors.sort((a, b) => a.sortSaturation > b.sortSaturation);
+		} else { // if reverse true
+			showcaseColors.sort((a, b) => a.sortSaturation < b.sortSaturation);
+		}
+	} else if (sortSecondary == "Luminosity"){
+		if(luminosityReverse == false){		
+			showcaseColors.sort((a, b) => a.sortLuminosity > b.sortLuminosity);
+		} else { // if reverse true
+			showcaseColors.sort((a, b) => a.sortLuminosity < b.sortLuminosity);
+		}
+	}
+
+// Sort Primary
+	if (sortPrimary == "Saturation"){
+		if(saturationReverse == false){
+			showcaseColors.sort((a, b) => a.sortSaturation > b.sortSaturation);
+		} else { // if reverse true
+			showcaseColors.sort((a, b) => a.sortSaturation < b.sortSaturation);
+		}	
+	} else if (sortPrimary == "Luminosity"){
+		if(luminosityReverse == false){		
+			showcaseColors.sort((a, b) => a.sortLuminosity > b.sortLuminosity);
+		} else { // if reverse true
+			showcaseColors.sort((a, b) => a.sortLuminosity < b.sortLuminosity);
+		}
+	}
 
 	// Resets Page Colors
 
@@ -1788,9 +2349,25 @@ for (var i = 0; i < 3; i++) {
 	colorSet.textContent = '';
 
 
+
 	//Extra Settings Init
+
+	let showColorAttributes = false;
+
 	if (document.getElementById("showColorAttributes").checked) {
-		let showColorAttributes = true;
+		showColorAttributes = true;
+	} 
+
+	let showHueAttributes = false;
+
+	if (document.getElementById("showHueAttributes").checked) {
+		showHueAttributes = true;
+	} 
+
+	let showDesatSymbol = false;
+
+	if (document.getElementById("showDesatSymbol").checked) {
+		showDesatSymbol = true;
 	} 
 
 
@@ -1816,42 +2393,83 @@ for (var i = 0; i < 3; i++) {
 		colorBox.appendChild(lineData)
 		lineData.appendChild(colorText)
 
+	// add hue boxes if true
 
-/*
-		// add sat/lumi labels
-		if (showColorAttributes) {
-		console.log("yuh")
+		if (showHueAttributes == true) {
+			console.log("colorisgo")
 
-			const colorSaturation = document.createElement("span")
-			colorSaturation.innerText = showcaseColors[i].saturation;
-			
-			const colorLuminosity = document.createElement("span")
-			colorLuminosity.innerText = showcaseColors[i].luminosity;
-
-			colorText.append(colorSaturation)
-			colorText.append(colorLuminosity)
+			if(showcaseColors[i].hue === "Greyscale"){
+				const symbol = document.getElementById("greyscaleSymbol").cloneNode(true);
+				symbol.classList.add('colorPalette');
+				lineData.appendChild(symbol);
+			}else if(showcaseColors[i].hue === "Brown"){
+				const symbol = document.getElementById("brownSymbol").cloneNode(true);
+				symbol.classList.add('colorPalette');
+				lineData.appendChild(symbol);
+			}else if(showcaseColors[i].hue === "Red"){
+				const symbol = document.getElementById("redSymbol").cloneNode(true);
+				symbol.classList.add('colorPalette');
+				lineData.appendChild(symbol);
+			} else if(showcaseColors[i].hue === "Orange"){
+				const symbol = document.getElementById("orangeSymbol").cloneNode(true);
+				symbol.classList.add('colorPalette');
+				lineData.appendChild(symbol);
+			} else if(showcaseColors[i].hue === "Yellow"){
+				const symbol = document.getElementById("yellowSymbol").cloneNode(true);
+				symbol.classList.add('colorPalette');
+				lineData.appendChild(symbol);
+			} else if(showcaseColors[i].hue === "Green"){
+				const symbol = document.getElementById("greenSymbol").cloneNode(true);
+				symbol.classList.add('colorPalette');
+				lineData.appendChild(symbol);
+			} else if(showcaseColors[i].hue === "Teal"){
+				const symbol = document.getElementById("tealSymbol").cloneNode(true);
+				symbol.classList.add('colorPalette');
+				lineData.appendChild(symbol);
+			} else if(showcaseColors[i].hue === "Blue"){
+				const symbol = document.getElementById("blueSymbol").cloneNode(true);
+				symbol.classList.add('colorPalette');
+				lineData.appendChild(symbol);
+			} else if(showcaseColors[i].hue === "Purple"){
+				const symbol = document.getElementById("purpleSymbol").cloneNode(true);
+				symbol.classList.add('colorPalette');
+				lineData.appendChild(symbol);
+			} else if(showcaseColors[i].hue === "Pink"){
+				const symbol = document.getElementById("pinkSymbol").cloneNode(true);
+				symbol.classList.add('colorPalette');
+				lineData.appendChild(symbol);
+			}
 		}
-*/
 
-		// add symbols if relevant (not working)
-		//if fixed, remember to add ellipse for dark
+	// add symbols if true
+		if (showColorAttributes == true) {
 
-		if(showcaseColors[i].luminosity === "Light"){
-			const symbol = document.getElementById("colorSymbolLightBasis").cloneNode(true);
-			lineData.appendChild(symbol);
-		} else if(showcaseColors[i].luminosity === "Medium"){
-			const symbol = document.getElementById("colorSymbolMediumBasis").cloneNode(true);
-			lineData.appendChild(symbol);
-		} else if(showcaseColors[i].luminosity === "Dark"){
-			const symbol = document.getElementById("colorSymbolDarkBasis").cloneNode(true);
-			lineData.appendChild(symbol);
+			if(showcaseColors[i].luminosity === "Light"){
+				const symbol = document.getElementById("colorSymbolLightBasis").cloneNode(true);
+				lineData.appendChild(symbol);
+			} else if(showcaseColors[i].luminosity === "Medium"){
+				const symbol = document.getElementById("colorSymbolMediumBasis").cloneNode(true);
+				lineData.appendChild(symbol);
+			} else if(showcaseColors[i].luminosity === "Dark"){
+				const symbol = document.getElementById("colorSymbolDarkBasis").cloneNode(true);
+				lineData.appendChild(symbol);
+			}
+
+			if(showcaseColors[i].saturation === "Saturated"){
+				const symbol = document.getElementById("colorSymbolSaturatedBasis").cloneNode(true);
+				symbol.classList.add('saturatedFix');
+				lineData.appendChild(symbol);		
+			}else if(showcaseColors[i].saturation === "Desaturated" && showDesatSymbol == true){
+				const symbol = document.getElementById("colorSymbolDesaturatedBasis").cloneNode(true);
+				symbol.classList.add('saturatedFix');
+				lineData.appendChild(symbol);		
+			}			
 		}
 
-		if(showcaseColors[i].saturation === "Saturated"){
-			const symbol = document.getElementById("colorSymbolSaturatedBasis").cloneNode(true);
-			symbol.classList.add('saturatedFix');
-			lineData.appendChild(symbol);		
-		}
+
+
+	//Send to page		
+
 		colorSet.appendChild(colorLine);
 
 	}
