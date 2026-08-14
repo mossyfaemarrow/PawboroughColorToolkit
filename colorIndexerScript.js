@@ -2141,7 +2141,6 @@ function copyFunction() {
 } 
 
 function desatRemoval(){
-	console.log(document.getElementById("showColorAttributes").checked)
 
 	if(document.getElementById("showColorAttributes").checked){
 		desatYeet.style.display = "inline"; 
@@ -2317,12 +2316,10 @@ for (var i = 0; i < 3; i++) {
 
 // Sort Secondary
 	if (sortSecondary == "Saturation"){
-		console.log(saturationReverse)
 		if(saturationReverse == true){
 			showcaseColors.sort((a, b) => b.sortSaturation - a.sortSaturation);
 		} else { // if reverse false
 			showcaseColors.sort((a, b) => a.sortSaturation - b.sortSaturation);
-			console.log(showcaseColors)
 
 		}
 	} else if (sortSecondary == "Luminosity"){

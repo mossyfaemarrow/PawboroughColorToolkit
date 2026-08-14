@@ -3,15 +3,19 @@ var r = document.querySelector(':root');
 
 function darkModeOn(){
 	localStorage.setItem("darkmode", 1);
+	console.log("darkmode")
+	console.log(localStorage.getItem("darkmode"))	
 }
 
 function darkModeOff(){
 	localStorage.setItem("darkmode", 0);
+	console.log("lightmode")
+	console.log(localStorage.getItem("darkmode"))
 }
 
 function darkModeSet(){
 	// Get the styles (properties and values) for the root
-	  var rs = getComputedStyle(r);	
+	var r = document.querySelector(':root');
 	// Set the value to Darkmode
 	  r.style.setProperty('--bg-color', '#202739');	
 	  r.style.setProperty('--txt-color', '#E1DBD2');	
@@ -24,7 +28,8 @@ function darkModeSet(){
 
 function darkModeRemove(){
 	// Get the styles (properties and values) for the root
-	  var rs = getComputedStyle(r);	
+	var r = document.querySelector(':root');
+
 	// Set the value to Lightmode	  	
 	  r.style.setProperty('--bg-color', '#fbf8f3');	
 	  r.style.setProperty('--txt-color', 'black');	
@@ -37,6 +42,8 @@ function darkModeRemove(){
 
 function darkModeControl(){
 	console.log("hallo")
+	localStorage.setItem("darkmode", 0)
+	console.log(localStorage.getItem("darkmode"))
 	if (localStorage.getItem("darkmode") == 1) {
 		darkModeSet();
 	} else if (localStorage.getItem("darkmode") == 0 ){
@@ -49,6 +56,8 @@ function darkModeControl(){
 
 function darkModeSwitch(){
 	console.log("hello")
+	console.log(localStorage.getItem("darkmode"))
+
 	if (localStorage.getItem("darkmode") == 1) {
 		darkModeOff();
 		darkModeRemove();
