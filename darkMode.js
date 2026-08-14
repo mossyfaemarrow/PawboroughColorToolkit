@@ -17,6 +17,8 @@ function darkModeSet(){
 	  r.style.setProperty('--txt-color', '#E1DBD2');	
 	  r.style.setProperty('--boxContainer-color', '#2D364A');	
 	  r.style.setProperty('--border-color', '#1C212F');	
+	  r.style.setProperty('--accent-bg', '#0D1324');	
+	  r.style.setProperty('--link-txt-color', 'lightblue');	
 
 }
 
@@ -28,6 +30,8 @@ function darkModeRemove(){
 	  r.style.setProperty('--txt-color', 'black');	
 	  r.style.setProperty('--boxContainer-color', '#fffdf8');	
 	  r.style.setProperty('--border-color', '#d3d1cc');	
+	  r.style.setProperty('--accent-bg', '#102520');	
+	  r.style.setProperty('--link-txt-color', 'darkgreen');	
 
 }
 

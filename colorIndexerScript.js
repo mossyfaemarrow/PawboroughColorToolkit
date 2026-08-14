@@ -2140,6 +2140,39 @@ function copyFunction() {
   alert("Text Copied!");
 } 
 
+function desatRemoval(){
+	console.log(document.getElementById("showColorAttributes").checked)
+
+	if(document.getElementById("showColorAttributes").checked){
+		desatYeet.style.display = "inline"; 
+	}
+	else{
+		desatYeet.style.display = "none"; 
+
+	}
+}
+
+function revSortRemoval(){
+
+	if(document.getElementById("SortPrimary").value == "Saturation"
+		|| document.getElementById("SortSecondary").value == "Saturation"){
+		satSortVis.style.display = "inline"; 
+	}
+	else{
+		satSortVis.style.display = "none"; 
+
+	}
+
+	if(document.getElementById("SortPrimary").value == "Luminosity"
+		|| document.getElementById("SortSecondary").value == "Luminosity"){
+		lumiSortVis.style.display = "inline"; 
+	}
+	else{
+		lumiSortVis.style.display = "none"; 
+
+	}
+}
+
 
 function generate(){
 console.log('version 1.4')
@@ -2284,31 +2317,34 @@ for (var i = 0; i < 3; i++) {
 
 // Sort Secondary
 	if (sortSecondary == "Saturation"){
-		if(saturationReverse == false){
-			showcaseColors.sort((a, b) => a.sortSaturation > b.sortSaturation);
-		} else { // if reverse true
-			showcaseColors.sort((a, b) => a.sortSaturation < b.sortSaturation);
+		console.log(saturationReverse)
+		if(saturationReverse == true){
+			showcaseColors.sort((a, b) => b.sortSaturation - a.sortSaturation);
+		} else { // if reverse false
+			showcaseColors.sort((a, b) => a.sortSaturation - b.sortSaturation);
+			console.log(showcaseColors)
+
 		}
 	} else if (sortSecondary == "Luminosity"){
-		if(luminosityReverse == false){		
-			showcaseColors.sort((a, b) => a.sortLuminosity > b.sortLuminosity);
-		} else { // if reverse true
-			showcaseColors.sort((a, b) => a.sortLuminosity < b.sortLuminosity);
+		if(luminosityReverse == true){		
+			showcaseColors.sort((a, b) => b.sortLuminosity - a.sortLuminosity); 
+		} else { // if reverse false
+			showcaseColors.sort((a, b) => a.sortLuminosity - b.sortLuminosity);
 		}
 	}
 
 // Sort Primary
 	if (sortPrimary == "Saturation"){
-		if(saturationReverse == false){
-			showcaseColors.sort((a, b) => a.sortSaturation > b.sortSaturation);
-		} else { // if reverse true
-			showcaseColors.sort((a, b) => a.sortSaturation < b.sortSaturation);
+		if(saturationReverse == true){
+			showcaseColors.sort((a, b) => b.sortSaturation - a.sortSaturation);
+		} else { // if reverse false
+			showcaseColors.sort((a, b) => a.sortSaturation - b.sortSaturation);
 		}	
 	} else if (sortPrimary == "Luminosity"){
-		if(luminosityReverse == false){		
-			showcaseColors.sort((a, b) => a.sortLuminosity > b.sortLuminosity);
-		} else { // if reverse true
-			showcaseColors.sort((a, b) => a.sortLuminosity < b.sortLuminosity);
+		if(luminosityReverse == true){		
+			showcaseColors.sort((a, b) => b.sortLuminosity - a.sortLuminosity); 
+		} else { // if reverse false
+			showcaseColors.sort((a, b) => a.sortLuminosity - b.sortLuminosity);
 		}
 	}
 
@@ -2382,43 +2418,53 @@ for (var i = 0; i < 3; i++) {
 		if (showHueAttributes == true) {
 
 			if(showcaseColors[i].hue === "Greyscale"){
-				const symbol = document.getElementById("greyscaleSymbol").cloneNode(true);
+				const symbol = document.createElement("div");
+				symbol.classList.add('greyscaleSymbol');
 				symbol.classList.add('colorPalette');
 				lineData.appendChild(symbol);
 			}else if(showcaseColors[i].hue === "Brown"){
-				const symbol = document.getElementById("brownSymbol").cloneNode(true);
+				const symbol = document.createElement("div");
+				symbol.classList.add('brownSymbol');
 				symbol.classList.add('colorPalette');
 				lineData.appendChild(symbol);
 			}else if(showcaseColors[i].hue === "Red"){
-				const symbol = document.getElementById("redSymbol").cloneNode(true);
+				const symbol = document.createElement("div");
+				symbol.classList.add('redSymbol');
 				symbol.classList.add('colorPalette');
 				lineData.appendChild(symbol);
 			} else if(showcaseColors[i].hue === "Orange"){
-				const symbol = document.getElementById("orangeSymbol").cloneNode(true);
+				const symbol = document.createElement("div");
+				symbol.classList.add('orangeSymbol');
 				symbol.classList.add('colorPalette');
 				lineData.appendChild(symbol);
 			} else if(showcaseColors[i].hue === "Yellow"){
-				const symbol = document.getElementById("yellowSymbol").cloneNode(true);
+				const symbol = document.createElement("div");
+				symbol.classList.add('yellowSymbol');
 				symbol.classList.add('colorPalette');
 				lineData.appendChild(symbol);
 			} else if(showcaseColors[i].hue === "Green"){
-				const symbol = document.getElementById("greenSymbol").cloneNode(true);
+				const symbol = document.createElement("div");
+				symbol.classList.add('greenSymbol');
 				symbol.classList.add('colorPalette');
 				lineData.appendChild(symbol);
 			} else if(showcaseColors[i].hue === "Teal"){
-				const symbol = document.getElementById("tealSymbol").cloneNode(true);
+				const symbol = document.createElement("div");
+				symbol.classList.add('tealSymbol');
 				symbol.classList.add('colorPalette');
 				lineData.appendChild(symbol);
 			} else if(showcaseColors[i].hue === "Blue"){
-				const symbol = document.getElementById("blueSymbol").cloneNode(true);
+				const symbol = document.createElement("div");
+				symbol.classList.add('blueSymbol');
 				symbol.classList.add('colorPalette');
 				lineData.appendChild(symbol);
 			} else if(showcaseColors[i].hue === "Purple"){
-				const symbol = document.getElementById("purpleSymbol").cloneNode(true);
+				const symbol = document.createElement("div");
+				symbol.classList.add('purpleSymbol');
 				symbol.classList.add('colorPalette');
 				lineData.appendChild(symbol);
 			} else if(showcaseColors[i].hue === "Pink"){
-				const symbol = document.getElementById("pinkSymbol").cloneNode(true);
+				const symbol = document.createElement("div");
+				symbol.classList.add('pinkSymbol');
 				symbol.classList.add('colorPalette');
 				lineData.appendChild(symbol);
 			}

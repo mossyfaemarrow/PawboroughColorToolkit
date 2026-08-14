@@ -4,6 +4,8 @@
   --boxContainer-color: #fffdf8;
   --border-color: #d3d1cc;  
   --select-color: black;
+  --accent-bg: #102520;
+  --link-txt-color: darkgreen;
 }
 
 
@@ -33,6 +35,11 @@ input {
 
 }
 
+h1{
+  font-size: 2em;
+  font-weight: bold;
+}
+
 h2{
   font-size: 1.6em;
   font-weight: bold;
@@ -42,6 +49,10 @@ h3{
   font-size: 1.2em;
   margin-top: 10px;
   font-weight: bold;
+}
+
+a{
+  color: var(--link-txt-color);
 }
 
 .tab {
@@ -76,7 +87,6 @@ select{
 label{
   font-weight: normal;
   margin-left: 2px;  
-  height: 20px;
   align-items: center;
 }
 
@@ -141,6 +151,24 @@ div{
   width:100%;
 
   /* broke chrome???*/
+}
+
+.checkboxes label {
+  display: inline-block;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+.checkboxes input {
+  vertical-align: middle;
+}
+.checkboxes label span {
+  vertical-align: middle;
+}
+
+.checkboxes div{
+  display: inline-block;
+  padding-right: 10px;
+  white-space: nowrap;
 }
 
 .colorSymbolLight{  
@@ -244,93 +272,183 @@ input[type="checkbox"] {
     position: absolute;
 }
 
+.nav-pills li.active a{
+  background-color: var(--accent-bg) !important;
+}
+
 #forumButton{
   margin-bottom: 10px;
 }
 
+#satSortVis{
+  display: none;
+}
 
+#lumiSortVis{
+  display: none;
+}
 
-#greyscaleSymbol{
+#greyscaleBanner{
+  background-color: rgb(39, 39, 39) !important;
+  display: inline-block;
+  opacity: 75%;
+  color: white;
+  width: 75px;
+  height: 21px;
+  padding-left:5px;
+}
+#brownBanner{
+  background-color: rgb(97, 68, 51) !important;
+  display: inline-block;
+  opacity: 75%;
+  color: white;  
+  width: 75px;
+  height: 21px;
+  padding-left:5px;
+}
+#redBanner{
+  background-color: rgb(214, 61, 47) !important;
+  display: inline-block;
+  opacity: 75%;
+  color: white;  
+  width: 75px;
+  height: 21px;
+  padding-left:5px;
+}
+#orangeBanner{
+  background-color: rgb(255, 109, 1) !important;
+  display: inline-block;
+  opacity: 75%;
+  color: white;  
+  width: 75px;
+  height: 21px;
+  padding-left:5px;
+}
+#yellowBanner{
+  background-color: rgb(251, 188, 4) !important;
+  display: inline-block;
+  opacity: 75%;
+  color: white;  
+  width: 75px;
+  height: 21px;
+  padding-left:5px;
+}
+#greenBanner{
+  background-color: rgb(40, 130, 63) !important;
+  display: inline-block;
+  opacity: 75%;
+  color: white;  
+  width: 75px;
+  height: 21px;
+  padding-left:5px;
+}
+#tealBanner{
+  background-color: rgb(70, 189, 198) !important;
+  display: inline-block;
+  opacity: 75%;
+  color: white;  
+  width: 75px;
+  height: 21px;
+  padding-left:5px;
+}
+#blueBanner{
+  background-color: rgb(66, 133, 244) !important;
+  display: inline-block;
+  opacity: 75%;
+  color: white;  
+  width: 75px;
+  height: 21px;
+  padding-left:5px;
+}
+#purpleBanner{
+  background-color: rgb(127, 93, 216) !important;
+  display: inline-block;
+  opacity: 75%;
+  color: white;  
+  width: 75px;
+  height: 21px;
+  padding-left:5px;
+}
+#pinkBanner{
+  background-color: rgb(193, 56, 114) !important;
+  display: inline-block;
+  opacity: 75%;
+  color: white;  
+  width: 75px;
+  height: 21px;
+  padding-left:5px;
+}
+
+.greyscaleSymbol{
   background-color: rgb(39, 39, 39) !important;
   height: 16px; 
   width: 16px;
   display: inline-block;
-  margin-right: 3px;
-  margin-top: 4px;
+  opacity: 75%;
 }
-#brownSymbol{
+.brownSymbol{
   background-color: rgb(97, 68, 51) !important;
   height: 16px; 
   width: 16px;
   display: inline-block;
-  margin-right: 3px;
-  margin-top: 4px;
+  opacity: 75%;
 }
-#redSymbol{
+.redSymbol{
   background-color: rgb(214, 61, 47) !important;
   height: 16px; 
   width: 16px;
   display: inline-block;
-  margin-right: 3px;
-  margin-top: 4px;
+  opacity: 75%;
 }
-#orangeSymbol{
+.orangeSymbol{
   background-color: rgb(255, 109, 1) !important;
   height: 16px; 
   width: 16px;
   display: inline-block;
-  margin-right: 3px;
-  margin-top: 4px;
+  opacity: 75%;
 }
-#yellowSymbol{
+.yellowSymbol{
   background-color: rgb(251, 188, 4) !important;
   height: 16px; 
   width: 16px;
   display: inline-block;
-  margin-right: 3px;
-  margin-top: 4px;
+  opacity: 75%;
 }
-#greenSymbol{
+.greenSymbol{
   background-color: rgb(40, 130, 63) !important;
   height: 16px; 
   width: 16px;
   display: inline-block;
-  margin-right: 3px;
-  margin-top: 4px;
+  opacity: 75%;
 }
-#tealSymbol{
+.tealSymbol{
   background-color: rgb(70, 189, 198) !important;
   height: 16px; 
   width: 16px;
   display: inline-block;
-  margin-right: 3px;
-  margin-top: 4px;
+  opacity: 75%;
 }
-#blueSymbol{
+.blueSymbol{
   background-color: rgb(66, 133, 244) !important;
   height: 16px; 
   width: 16px;
   display: inline-block;
-  margin-right: 3px;
-  margin-top: 4px;
+  opacity: 75%;
 }
-#purpleSymbol{
+.purpleSymbol{
   background-color: rgb(127, 93, 216) !important;
   height: 16px; 
   width: 16px;
   display: inline-block;
-  margin-right: 3px;
-  margin-top: 4px;
+  opacity: 75%;
 }
-#pinkSymbol{
+.pinkSymbol{
   background-color: rgb(193, 56, 114) !important;
   height: 16px; 
   width: 16px;
   display: inline-block;
-  margin-right: 3px;
-  margin-top: 4px;
+  opacity: 75%;
 }
-
 /* DarkMode 
 
 .darkmodeBase{

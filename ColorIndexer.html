@@ -17,13 +17,23 @@
 
 	<script src="colorIndexerScript.js"></script>
 	<script src="darkMode.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 	</head>
 	<body onload="generate()" onload="darkModeControl()">
 
 
 		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-9">
+					<h1>FaeMarrow's Pawborough Color Indexer</h1>
+				</div>
+				<div class="col-sm-3">
+					<button onclick="darkModeSwitch()" class="right-align">Darkmode?</button>					
+
+				</div>
+			</div>
 
 		 	<div class="row">
 
@@ -32,183 +42,195 @@
 					<div id="colorSet">
 					</div>
 					<br>
-					<p>Problems or suggestions? Contact Faemarrow on PB</p>
+					<p>Problems or suggestions? Contact <a href="https://pawborough.net/u/Faemarrow">Faemarrow</a> on PB</p>
 					<br>
 			    </div>
 
-<!--
-<div id="greyscaleSymbol"></div>	
-<div id="brownSymbol"></div>	
-<div id="redSymbol"></div>
-							<div id="orangeSymbol"></div>
-							<div id="yellowSymbol"></div>
-							<div id="greenSymbol"></div>
-							<div id="tealSymbol"></div>
-							<div id="blueSymbol"></div>
-							<div id="purpleSymbol"></div>
-							<div id="pinkSymbol"></div>
-						-->
 
 			    <div class="col-sm-6">
 			    	<h2>Selection:</h2>
 
-			    	<div class="row">
 			    		<div class="col-sm-4">
-							<form id="Hue"><h3>Hue:</h3>
+							<form id="Hue" class="checkboxes"><h3>Hue:</h3>
 
 							<!--<input type="checkbox" name="Hue" id="Hue" multiple>-->
 								<input type="checkbox" id="Greyscale" name="Greyscale" value="Greyscale" checked>
-								<label for="Greyscale"><div id="greyscaleSymbol"></div>	Greyscale</label><br>
+								<label for="Greyscale" id="greyscaleBanner">	Greyscale</label><br>
 
 								<input type="checkbox" id="Brown" name="Brown" value="Brown">
-								<label for="Brown"><div id="brownSymbol"></div>	Brown</label><br>
+								<label for="Brown" id="brownBanner">	Brown</label><br>
 
 								<input type="checkbox" id="Red" name="Red" value="Red">
-								<label for="Red"><div id="redSymbol"></div>Red</label><br>
+								<label for="Red" id="redBanner">Red</label><br>
 
 								<input type="checkbox" id="Orange" name="Orange" value="Orange">
-								<label for="Orange"><div id="orangeSymbol"></div>Orange</label><br>
+								<label for="Orange" id="orangeBanner">Orange</label><br>
 
 								<input type="checkbox" id="Yellow" name="Yellow" value="Yellow">
-								<label for="Yellow"><div id="yellowSymbol"></div>Yellow</label><br>
+								<label for="Yellow" id="yellowBanner">Yellow</label><br>
+
 
 								<input type="checkbox" id="Green" name="Green" value="Green">
-								<label for="Green"><div id="greenSymbol"></div>Green</label><br>
+								<label for="Green" id="greenBanner">Green</label><br>
 
 								<input type="checkbox" id="Teal" name="Teal" value="Teal">
-								<label for="Teal"><div id="tealSymbol"></div>Teal</label><br>
+								<label for="Teal" id="tealBanner">Teal</label><br>
 
 								<input type="checkbox" id="Blue" name="Blue" value="Blue">
-								<label for="Blue"><div id="blueSymbol"></div>Blue</label><br>
+								<label for="Blue" id="blueBanner">Blue</label><br>
 
 								<input type="checkbox" id="Purple" name="Purple" value="Purple">
-								<label for="Purple"><div id="purpleSymbol"></div>Purple</label><br>
+								<label for="Purple" id="purpleBanner">Purple</label><br>
 
 								<input type="checkbox" id="Pink" name="Pink" value="Pink">
-								<label for="Pink"><div id="pinkSymbol"></div>Pink</label><br>
+								<label for="Pink" id="pinkBanner">Pink</label><br>
 
 							</form>
 						</div>
 
-			    		<div class="col-sm-4">
+						<div class="col-sm-8">
+							<div class="row">
+					    		<div class="col-sm-6">
 
-							<form id="Saturation"><h3>Saturation:</h3>
-
-
-							<!--<input type="checkbox" name="Saturation" id="Saturation">-->
-								<input type="checkbox" id="Saturated" name="Saturated" value="Saturated">
-								<label for="Saturated"><svg id=colorSymbolSaturatedBasis viewbox="0, 0, 16, 16"><path class="colorSymbolSaturated"></path></svg>&nbsp&nbsp&nbsp&nbsp  Saturated</label><br>
-
-								<input type="checkbox" id="Desaturated" name="Desaturated" value="Desaturated" checked>
-								<label for="Desaturated"><svg id=colorSymbolDesaturatedBasis viewbox="0, 0, 30, 42"><path class="colorSymbolDesaturated"></path></svg>&nbsp&nbsp&nbsp&nbsp  Desaturated</label><br>
-
-								<input type="checkbox" id="Universal" name="Universal" value="Universal">
-								<label for="Universal">&nbsp&nbsp&nbsp&nbsp  Universal</label><br>
-							
-							</form>
-						</div>
-
-				    		<div class="col-sm-4">
-
-							<form id="Luminosity"><h3>Luminosity:</h3>
+									<form id="Saturation"><h3>Saturation:</h3>
 
 
-							<!--<input type="checkbox" name="Luminosity" id="Luminosity">-->
-								<input type="checkbox" id="Light" name="Light" value="Light" checked>
-								<label for="Light"><svg id=colorSymbolLightBasis viewbox="0, 0, 16, 16"><path class="colorSymbolLight"></path></svg>&nbsp&nbsp&nbsp&nbsp Light </label><br>
+									<!--<input type="checkbox" name="Saturation" id="Saturation">-->
+										<input type="checkbox" id="Saturated" name="Saturated" value="Saturated">
+										<label for="Saturated"><svg id=colorSymbolSaturatedBasis viewbox="0, 0, 16, 16"><path class="colorSymbolSaturated"></path></svg>&nbsp&nbsp&nbsp&nbsp  Saturated</label><br>
 
-								<input type="checkbox" id="Medium" name="Medium" value="Medium">
-								<label for="Medium"><svg id=colorSymbolMediumBasis viewbox="0, 0, 16, 16"><path class="colorSymbolMedium"></path></svg>&nbsp&nbsp&nbsp&nbsp Medium</label><br>
+										<input type="checkbox" id="Desaturated" name="Desaturated" value="Desaturated" checked>
+										<label for="Desaturated"><svg id=colorSymbolDesaturatedBasis viewbox="0, 0, 30, 42"><path class="colorSymbolDesaturated"></path></svg>&nbsp&nbsp&nbsp&nbsp  Desaturated</label><br>
 
-								<input type="checkbox" id="Dark" name="Dark" value="Dark">
-								<label for="Dark"><svg id=colorSymbolDarkBasis viewbox="0, 0, 16, 16"><path class="colorSymbolDark"></path><circle id="Ellipse 65" cx="8.00043" cy="8.00022" r="4.00022" fill="currentColor"></circle></svg>&nbsp&nbsp&nbsp&nbsp Dark</label><br>
-
-							</form>
+										<input type="checkbox" id="Universal" name="Universal" value="Universal">
+										<label for="Universal">&nbsp&nbsp&nbsp&nbsp  Universal</label><br>
 									
-						</div>	
-					</div>
-					<br>
+									</form>
+								</div>
+
+					    		<div class="col-sm-6">
+
+									<form id="Luminosity"><h3>Luminosity:</h3>
+
+									<!--<input type="checkbox" name="Luminosity" id="Luminosity">-->
+										<input type="checkbox" id="Light" name="Light" value="Light" checked>
+										<label for="Light"><svg id=colorSymbolLightBasis viewbox="0, 0, 16, 16"><path class="colorSymbolLight"></path></svg>&nbsp&nbsp&nbsp&nbsp Light </label><br>
+
+										<input type="checkbox" id="Medium" name="Medium" value="Medium">
+										<label for="Medium"><svg id=colorSymbolMediumBasis viewbox="0, 0, 16, 16"><path class="colorSymbolMedium"></path></svg>&nbsp&nbsp&nbsp&nbsp Medium</label><br>
+
+										<input type="checkbox" id="Dark" name="Dark" value="Dark">
+										<label for="Dark"><svg id=colorSymbolDarkBasis viewbox="0, 0, 16, 16"><path class="colorSymbolDark"></path><circle id="Ellipse 65" cx="8.00043" cy="8.00022" r="4.00022" fill="currentColor"></circle></svg>&nbsp&nbsp&nbsp&nbsp Dark</label><br>
+									</form>
+								</div>	
+							</div>
+						</div>
 					<div class="row">
-						<h2>Addons:</h2>
+						<br><br>
 						<div class="col-sm-4">
-			    	<h3>Sort Order:</h3>
-			    	   	<label for=Primary> Primary </label>
-						<label for="SortPrimary"></label>
+				    		<h3>Sort Order:</h3>
+				    	   	<label for=Primary> Primary </label>
+							<label for="SortPrimary"></label>
 
-						<select name="SortPrimary" id="SortPrimary">
-							<option value="Hue" selected>Hue</option>
-							<option value="Saturation">Saturation</option>
-							<option value="Luminosity">Luminosity</option>
-						</select>
-					<br>
-					<label for=Secondary> Secondary </label>
-						<label for="SortSecondary"></label>
+							<select name="SortPrimary" id="SortPrimary" onclick="revSortRemoval()">
+								<option value="Hue" selected>Hue</option>
+								<option value="Saturation">Saturation</option>
+								<option value="Luminosity">Luminosity</option>
+							</select>
+							<br>
 
-						<select name="SortSecondary" id="SortSecondary">
-							<option value="Hue">Hue</option>
-							<option value="Saturation" selected>Saturation</option>
-							<option value="Luminosity">Luminosity</option>
-						</select>		
+							<label for=Secondary> Secondary </label>
+								<label for="SortSecondary"></label>
 
-					<br><br>	
-					<button id="Generator" class="translate-middle" onclick="generate()">Generate</button>
-					<!--<button id="Reset" class="translate-middle" onclick="window.location.reload()">Reset</button>-->							
-					</div>
-					<div class = "col-sm-8">
+								<select name="SortSecondary" id="SortSecondary" onclick="revSortRemoval()">
+									<option value="Hue">Hue</option>
+									<option value="Saturation" selected>Saturation</option>
+									<option value="Luminosity">Luminosity</option>
+								</select>		
 
-
-			    	<h3>Settings:</h3>
-
-						<input type="checkbox" id="showColorAttributes" name="showColorAttributes" value="showColorAttributes" checked>
-						<label for="showColorAttributes">Show Color Attributes?</label><br>
-
-						<input type="checkbox" id="showDesatSymbol" name="showDesatSymbol" value="showDesatSymbol">
-						<label for="showDesatSymbol">Show Desaturation Symbol?</label><br>	
-
-						<input type="checkbox" id="showHueAttributes" name="showHueAttributes" value="showHueAttributes">
-						<label for="showHueAttributes">Show Color Hue?</label><br><br>	
-
-						<p>If Primary or Secondary sort is Saturation,</p>
-						<input type="checkbox" id="saturationReverse" name="saturationReverse" value="saturationReverse">
-						<label for="saturationReverse">Reverse Saturation Sort Order?</label><br><br>	
-
-						<p>If Primary or Secondary sort is Luminosity,</p>
-						<input type="checkbox" id="luminosityReverse" name="luminosityReverse" value="luminosityReverse">
-						<label for="luminosityReverse">Reverse Luminosity Sort Order?</label><br><br>					
-
-						<label for="userInput">Optional Label:</label><br>		
-						<input type="input" id="userInput" name="userInput" value="">
-
-			
-
-
+							<br><br>	
+							<button id="Generator" class="translate-middle" onclick="generate()">Generate</button>
 						</div>
 
 					</div>
 				</div>
 
 
+				<!-- Sidebar -->
 
-				<div class="col-sm-3">
-					
-					<button onclick="darkModeSwitch()" class="right-align">Darkmode?</button>					
-					<br><br>
+				<div id="sidebar" class="col-sm-3">
 
-					<h3>Forum Code:</h3>
-					<button onclick="copyFunction()" id=forumButton>Copy text</button> 
-					<div id= forumBox class=key>
+					<ul class="nav nav-pills">
+					  <li class="active"><a data-toggle="pill" href="#instructions">instructions</a></li>
+					  <li><a data-toggle="pill" href="#settings">settings</a></li>
+					  <li><a data-toggle="pill" href="#forum">forum</a></li>
+					</ul>
 
+				  <!-- Tab panes -->
+
+					<div class="tab-content">
+					  <div id="instructions" class="tab-pane fade in active">
+					    <p>boop boop</p>
+					  </div>
+					  <div id="settings" class="tab-pane fade">
+				    	
+		                    <h3>Settings:</h3>
+
+							<input type="checkbox" id="showColorAttributes" name="showColorAttributes" value="showColorAttributes" onclick="desatRemoval()"checked>
+							<label for="showColorAttributes">Show Color Attributes?</label><br>
+
+							<span id="desatYeet">
+							<input type="checkbox" id="showDesatSymbol" name="showDesatSymbol" value="showDesatSymbol">
+							<label for="showDesatSymbol">Display Desaturated Symbols?</label><br>	
+							</span>
+
+							<input type="checkbox" id="showHueAttributes" name="showHueAttributes" value="showHueAttributes">
+							<label for="showHueAttributes">Display Color Hues?</label><br><br>	
+
+							<span id="satSortVis">
+							<input type="checkbox" id="saturationReverse" name="saturationReverse" value="saturationReverse">
+							<label for="saturationReverse">Reverse Saturation Sort Order?</label><br><br>	
+							</span>
+
+							<span id="lumiSortVis">
+							<input type="checkbox" id="luminosityReverse" name="luminosityReverse" value="luminosityReverse">
+							<label for="luminosityReverse">Reverse Luminosity Sort Order?</label><br><br>		
+							</span>			
+
+							<label for="userInput">Optional Label:</label><br>		
+							<input type="input" id="userInput" name="userInput" value="">	
+
+					  </div>
+					  <div id="forum" class="tab-pane fade">
+						<h3>Forum Code:</h3>
+						<p> Copies a simplified version of the selected color index for use on PB bios/forums.</p>
+						<button onclick="copyFunction()" id=forumButton>Copy text</button> 
+						<div id= forumBox class=key>
+
+						</div>
+						<p>Note: only shows the color and name, symbols not included.</p>				    	
+
+					  </div>
 					</div>
-					<p>Note: Forum code is simplified and only shows the color and name.</p>
+
+
+				  <!-- Nav tabs 
+				  <ul class="nav nav-tabs" role="tablist">
+				    <li role="presentation" class="active"><a href="#instructions" aria-controls="instructions" role="tab" data-toggle="tab">instructions</a></li>
+				    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">settings</a></li>
+				    <li role="presentation"><a href="#forum" aria-controls="forum" role="tab" data-toggle="tab">forum</a></li>
+				  </ul>
+				-->
+
+				</div>
 				</div>
 			</div>	
 		</div>
 
 
-
 		<footer>
 				<div><small> No AI was used in the making of this tool. I would rather gargle gravel <3.</small></div>
-				<div><small> Credit goes to Pawborough. </small></div>
+				<div><small> Credit goes to <a href="https://pawborough.net/">Pawborough</a>. Not affiliated with Pawborough.</small></div>
 		</footer>
 
 	</body>
