@@ -2343,7 +2343,7 @@ for (var i = 0; i < 3; i++) {
 
 
 // Fill userInput Label if present
-	const userInput = document.createElement("h2");
+	const userInput = document.createElement("h3");
 	userInput.textContent=document.getElementById("userInput").value 
 	//console.log(userInput)
 	if (userInput != "") {
@@ -2429,11 +2429,14 @@ for (var i = 0; i < 3; i++) {
 
 			if(showcaseColors[i].luminosity === "Light"){
 				const symbol = document.getElementById("colorSymbolLightBasis").cloneNode(true);
+				symbol.classList.add('lightFix');				
 				lineData.appendChild(symbol);
 			} else if(showcaseColors[i].luminosity === "Medium"){
 				const symbol = document.getElementById("colorSymbolMediumBasis").cloneNode(true);
+				symbol.classList.add('lightFix');
 				lineData.appendChild(symbol);
 			} else if(showcaseColors[i].luminosity === "Dark"){
+				symbol.classList.add('lightFix');
 				const symbol = document.getElementById("colorSymbolDarkBasis").cloneNode(true);
 				lineData.appendChild(symbol);
 			}
