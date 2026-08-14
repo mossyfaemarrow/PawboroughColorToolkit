@@ -1,0 +1,742 @@
+
+
+/*Greyscale*/
+#Snowdrop {
+    background-color: #FFFFFF
+  }
+#Jasmine {
+    background-color: #FFFFFF
+  }
+#Diamond {
+    background-color: #F3FBFC
+  }
+#Panda {
+    background-color: #E6E6E6
+  }
+#Birch {
+    background-color: #E6E5E0
+  }
+#Heron {
+    background-color: #E2E7EB
+  }
+#Moon {
+    background-color: #DDDDDD
+  }
+#Moonflower {
+    background-color: #ECE8DF
+  }
+#Possum {
+    background-color: #C5C5C5
+  }
+#Chinchilla {
+    background-color: #BCB8B5
+  }
+#Silver {
+    background-color: #C1C4C9
+  }
+#Frost {
+    background-color: #B5B7C4
+  }
+#Ash {
+    background-color: #9C9CA0
+  }
+#Quail {
+    background-color: #7D7D7D
+  }
+#Dust {
+    background-color: #635C5C
+  }
+#Cinder {
+    background-color: #4E484E
+  }
+#Iron {
+    background-color: #464646
+  }
+#Beetle {
+    background-color: #2F2F2F
+  }
+#Swallowtail {
+    background-color: #212121
+  }
+#Raven {
+    background-color: #1D2022
+  }
+#Eclipse {
+    background-color: #171516
+  }
+
+
+/*Brown*/
+
+ #Sand {
+    background-color: #ECCCAF
+  }
+#Shrew {
+    background-color: #D8B89E
+  }
+#Hound {
+    background-color: #D8B89E
+  }
+#Bean {
+    background-color: #C1936F
+  }
+#Silt {
+    background-color: #AB8D75
+  }
+#Sparrow {
+    background-color: #AE8C67
+  }
+#Leaf {
+    background-color: #AC8869
+  }
+#Mink {
+    background-color: #AC8878
+  }
+#Hazelnut {
+    background-color: #826048
+  }
+#Buckeye {
+    background-color: #845C4F
+  }
+#Bear {
+    background-color: #6E4937
+  }
+#Bramble {
+    background-color: #4B3428
+  }
+#Hawk {
+    background-color: #45352E
+  }
+#Puffin {
+    background-color: #E6DDD1
+  }
+#Coconut {
+    background-color: #E1D4C1
+  }
+#Oat {
+    background-color: #DCD4AF
+  }
+#Bone {
+    background-color: #d7d1bd
+  }
+#Hare {
+    background-color: #d7d1bd
+  }
+#Cassia {
+    background-color: #C4B8AC
+  }
+#Fawn {
+    background-color: #C2B79E
+  }
+#Smoke {
+    background-color: #91897c
+  }
+#Mouse {
+    background-color: #8a857f
+  }
+#Coyote {
+    background-color: #4e483c
+  }
+#Charcoal {
+    background-color: #35322D
+  }
+#Bushpig {
+    background-color: #372c24
+  }
+#Licorice {
+    background-color: #2D2823
+  }
+
+
+/*Red*/
+
+#Axolotl {
+    background-color: #f1b2b0
+  }
+#Coral {
+    background-color: #e08581
+  }
+#Hawthorn {
+    background-color: #E13C31
+  }
+#Mushroom {
+    background-color: #C94250
+  }
+#Pomegranate {
+    background-color: #CD3037
+  }
+#Apple {
+    background-color: #C62C2E
+  }
+#Tulip {
+    background-color: #BF002A
+  }
+#Lychee {
+    background-color: #AB393B
+  }
+#Radish {
+    background-color: #832C25
+  }
+#Ruby {
+    background-color: #6c2116
+  }
+#Blood {
+    background-color: #761910
+  }
+#Lotus {
+    background-color: #f5d2c1
+  }
+#Peach {
+    background-color: #F1B49E
+  }
+#Squid {
+    background-color: #db927b
+  }
+#Salmon {
+    background-color: #FF8E6A
+  }
+#Hornet {
+    background-color: #D97245
+  }
+#Deer {
+    background-color: #bc634b
+  }
+#Poppy {
+    background-color: #AF4A34
+  }
+#Squirrel {
+    background-color: #A55444
+  }
+#Ladybug {
+    background-color: #a24f3a
+  }
+#Fox {
+    background-color: #8E4424
+  }
+#Maple {
+    background-color: #854632
+  }
+#Hellebore {
+    background-color: #742e37
+  }
+#Beetroot {
+    background-color: #5E2429
+  }
+
+
+/*Orange*/
+
+#Grapefruit {
+    background-color: #F3C78A
+  }
+#Persimmon {
+    background-color: #f09c5d
+  }
+#Autumn {
+    background-color: #e9ab5a
+  }
+#Tamarin {
+    background-color: #F4BF3B
+  }
+#Fire {
+    background-color: #F29200
+  }
+#Goldfish {
+    background-color: #D78236
+  }
+#Daybreak {
+    background-color: #e87c4b
+  }
+#Sweetpotato {
+    background-color: #C66639
+  }
+#Rooster {
+    background-color: #b96842
+  }
+#Seed {
+    background-color: #b96842
+  }
+#Sap {
+    background-color: #7B4228
+  }
+#Yuca {
+    background-color: #f1d9b8
+  }
+#Pumpkin {
+    background-color: #ebc891
+  }
+#Apricot {
+    background-color: #DEB985
+  }
+#Carrot {
+    background-color: #c89566
+  }
+#Clay {
+    background-color: #CC986F
+  }
+#Sun {
+    background-color: #ca8545
+  }
+#Butternut {
+    background-color: #C07A37
+  }
+#Ginger {
+    background-color: #cb774e
+  }
+#Tangerine {
+    background-color: #C57448
+  }
+#Killdeer {
+    background-color: #a77758
+  }
+#Yam {
+    background-color: #a76e47
+  }
+#Cinnamon {
+    background-color: #9F6435
+  }
+#Flame {
+    background-color: #a15d3c
+  }
+#Nutmeg {
+    background-color: #8E5236
+  }
+
+
+/*Yellow*/
+
+#Sugar {
+    background-color: #FEFBF0
+  }
+#Cornsilk {
+    background-color: #FDF6DD
+  }
+#Vanilla {
+    background-color: #FFF5C4
+  }
+#Thyme {
+    background-color: #FAF8B4
+  }
+#Banana {
+    background-color: #F2ECA1
+  }
+#Durian {
+    background-color: #F8EEC2
+  }
+#Canary {
+    background-color: #FAE62B
+  }
+#Daffodil {
+    background-color: #EDD962
+  }
+#Yellowjacket {
+    background-color: #F5CF2A
+  }
+#Bellpepper {
+    background-color: #FFC71C
+  }
+#Thunder {
+    background-color: #ebc055
+  }
+#Mango {
+    background-color: #eebc67
+  }
+#Amber {
+    background-color: #DEAE4F
+  }
+#Squash {
+    background-color: #BA8342
+  }
+#Sheep {
+    background-color: #FCFAF1
+  }
+#Summer {
+    background-color: #FCEFD6
+  }
+#Honeysuckle {
+    background-color: #f2e6c1
+  }
+#Bee {
+    background-color: #F2E19D
+  }
+#Root {
+    background-color: #e6dcb9
+  }
+#Flaxseed {
+    background-color: #E4D380
+  }
+#Dandelion {
+    background-color: #E7BE6E
+  }
+#Honey {
+    background-color: #DDAF5A
+  }
+#Turmeric {
+    background-color: #c89848
+  }
+#Gold {
+    background-color: #C6B064
+  }
+#Peanut {
+    background-color: #90774C
+  }
+#Oak {
+    background-color: #81684E
+  }
+
+
+/*Green*/
+
+#Flora {
+    background-color: #8FD59B
+  }
+#Mint {
+    background-color: #BBDFC0
+  }
+#Hummingbird {
+    background-color: #BBDFC0
+  }
+#Anise {
+    background-color: #DBE380
+  }
+#Parakeet {
+    background-color: #BADD29
+  }
+#Caterpillar {
+  background-color: #5CC345
+  }
+#Chameleon {
+  background-color: #5CC345
+  }
+#Rosemary {
+  background-color: #73A88A
+  }
+#Emerald {
+  background-color: #62AB89
+  }
+#Sage {
+  background-color: #58845b
+  }
+#Peyote {
+  background-color: #5d7361
+  }
+#Creeper {
+  background-color: #598528
+  }
+#Parsley {
+  background-color: #286B13
+  }
+#Holly {
+  background-color: #354E40
+  }
+#Mahi-mahi {
+  background-color: #193729
+  }
+#Onion {
+  background-color: #DBE2B8
+  }
+#Spring {
+  background-color: #CDE8B8
+  }
+#Pistachio {
+  background-color: #b5d59b
+  }
+#Frog {
+  background-color: #B6C27F
+  }
+#Eel {
+  background-color: #cfcb74
+  }
+#Tea {
+  background-color: #adbb65
+  }
+#Locust {
+  background-color: #9b984f
+  }
+#Eucalyptus {
+  background-color: #828063
+  }
+#Toad {
+  background-color: #5e5b38
+  }
+
+
+
+/*Teal*/
+
+#Egg {
+  background-color: #B1F4F5
+  }
+#Wind {
+  background-color: #A8EACF
+  }
+#Lightning {
+  background-color: #56DBC7
+  }
+#Anemone {
+  background-color: #58D6E1
+  }
+#Meteor {
+  background-color: #8DC3C1
+  }
+#Rainwash {
+  background-color: #72CBAE
+  }
+#Jade {
+  background-color: #5B9890
+  }
+#Puya {
+  background-color: #275e62
+  }
+#Agate {
+  background-color: #1d3342
+  }
+#Bloodstone {
+  background-color: #1d3342
+  }
+#Spirit {
+  background-color: #F2FdFE
+  }
+#Winter {
+  background-color: #B8E0E5
+  }
+#Seafoam {
+  background-color: #bfdee3
+  }
+#Hydrangea {
+  background-color: #bfdee3
+  }
+#Gourami {
+  background-color: #C1CCCF
+  }
+#Mist {
+  background-color: #C1CCCF
+  }
+#Bismuth {
+  background-color: #939FA6
+  }
+#Silverfish {
+  background-color: #798084
+  }
+#Treeswallow {
+  background-color: #6b757d
+  }
+#Seabed {
+  background-color: #445b73
+  }
+#Mantaray {
+  background-color: #18282f
+  }
+
+
+/*Blue*/
+
+#Hail {
+  background-color: #DFEFF8
+  }
+#Sky {
+  background-color: #B0C5F9
+  }
+#Chrysalis {
+  background-color: #bbd5de
+  }
+#Larkspur {
+  background-color: #86A4F0
+  }
+#Fairywren {
+  background-color: #5C90F7
+  }
+#Damselfly {
+  background-color: #52ACE8
+  }
+#Kingfisher {
+  background-color: #1D7ADB
+  }
+#Dragonslug {
+  background-color: #0941A4
+  }
+#Sapphire {
+  background-color: #0b1f64
+  }
+#Peafowl {
+  background-color: #243078
+  }
+#Nightfall {
+  background-color: #041C53
+  }
+#Ice {
+  background-color: #F0F0FD
+  }
+#Feather {
+  background-color: #C1C7D7
+  }
+#Storm {
+  background-color: #C1C7D7
+  }
+#River {
+  background-color: #98ACCB
+  }
+#Arctic {
+  background-color: #82B0CA
+  }
+#Ocean {
+  background-color: #7596b7
+  }
+#Mackerel {
+  background-color: #7596b7
+  }
+#Lapis {
+  background-color: #324D77
+  }
+#Betta {
+  background-color: #202633
+  }
+#Whale {
+  background-color: #202633
+  }
+#Magpie {
+  background-color: #202633
+  }
+
+
+/*Purple*/
+
+#Stardust {
+  background-color: #EDEAFF
+  }
+#Hyacinth {
+  background-color: #e1d6fb
+  }
+#Catmint {
+  background-color: #F1CAFF
+  }
+#Foxglove {
+  background-color: #CBA0D5
+  }
+#Aster {
+  background-color: #9E3ABE
+  }
+#Pokeweed {
+  background-color: #791E6A
+  }
+#Bellflower {
+  background-color: #8B7FE8
+  }
+#Wolfsbane {
+  background-color: #7C56CD
+  }
+#Huckleberry {
+  background-color: #4B49A9
+  }
+#Nightshade {
+  background-color: #502C85
+  }
+#Fig {
+  background-color: #60415F
+  }
+#Plum {
+  background-color: #412B49
+  }
+#Urchin {
+  background-color: #342840
+  }
+#Morning {
+  background-color: #C4BDCC
+  }
+#Heather {
+  background-color: #CCC4EB
+  }
+#Twilight {
+  background-color: #CCC4EB
+  }
+#Lavender {
+  background-color: #BAA7DE
+  }
+#Wisteria {
+  background-color: #A4ABDF
+  }
+#Taro {
+  background-color: #8378B3
+  }
+#Iris {
+  background-color: #6c5f82
+  }
+#Thistle {
+  background-color: #8C7C8C
+  }
+#Rain {
+  background-color: #505572
+  }
+#Shadow {
+  background-color: #575568
+  }
+#Currant {
+  background-color: #3B3947
+  }
+#Midnight {
+  background-color: #292934
+  }
+
+
+/*Pink*/
+
+#Sakura {
+  background-color: #F6D0E2
+  }
+#Quartz {
+  background-color: #F6D0E2
+  }
+#Peony {
+  background-color: #FDC6D2
+  }
+#Hibiscus {
+  background-color: #ecbecf
+  }
+#Carnation {
+  background-color: #f2b3ca
+  }
+#Rose {
+  background-color: #E08FA9
+  }
+#Watermelon {
+  background-color: #F0807F
+  }
+#Dragonfruit {
+  background-color: #F54780
+  }
+#Begonia {
+  background-color: #C45C86
+  }
+#Orchid {
+  background-color: #BE378F
+  }
+#Winecup {
+  background-color: #a02367
+  }
+#Lily {
+  background-color: #F8E7DF
+  }
+#Pearl {
+  background-color: #e6d6d1
+  }
+#Magnolia {
+  background-color: #d6b5b2
+  }
+#Lilac {
+  background-color: #CDAAA6
+  }
+#Waxflower {
+  background-color: #dfa2a1
+  }
+#Acai {
+  background-color: #864a5b
+  }
+#Mulberry {
+  background-color: #5d1135
+  }
+#Dahlia {
+  background-color: #520537
+  }
+#Grape {
+  background-color: #4D2C3D
+  }

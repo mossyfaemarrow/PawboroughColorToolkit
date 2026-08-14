@@ -2142,7 +2142,7 @@ function copyFunction() {
 
 
 function generate(){
-console.log('version 1.3')
+console.log('version 1.4')
 
 // reset array
 let showcaseColors = []
@@ -2252,62 +2252,20 @@ for (var i = 0; i < 3; i++) {
 
 // main
 
-
-	switch(sortPrimary){
-	case "Hue":
-		for (var i = 0; i < pbColors.length; i++) {
-			for (var h = 0; h < selectedHue.length; h++) {
-				for (var s = 0; s < selectedSaturation.length; s++) {
-					for (var l = 0; l < selectedLuminosity.length; l++) {
-
-						if(selectedHue[h] === pbColors[i].hue){
-							if(selectedSaturation[s] === pbColors[i].saturation){
-								if(selectedLuminosity[l] === pbColors[i].luminosity){
-									showcaseColors.push(pbColors[i]);
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	break;
-	case "Saturation":
-		for (var i = 0; i < pbColors.length; i++) {
-				for (var s = 0; s < selectedSaturation.length; s++) {
-					for (var h = 0; h < selectedHue.length; h++) {
-						for (var l = 0; l < selectedLuminosity.length; l++) {
-
+	for (var i = 0; i < pbColors.length; i++) {
+		for (var h = 0; h < selectedHue.length; h++) {
+			for (var s = 0; s < selectedSaturation.length; s++) {
+				for (var l = 0; l < selectedLuminosity.length; l++) {
+					if(selectedHue[h] === pbColors[i].hue){
 						if(selectedSaturation[s] === pbColors[i].saturation){
 							if(selectedLuminosity[l] === pbColors[i].luminosity){
-								if(selectedHue[h] === pbColors[i].hue){
-									showcaseColors.push(pbColors[i]);
-								}
+								showcaseColors.push(pbColors[i]);
 							}
 						}
 					}
 				}
 			}
 		}
-	break;
-	case "Luminosity":
-		for (var i = 0; i < pbColors.length; i++) {
-			for (var h = 0; h < selectedHue.length; h++) {
-				for (var s = 0; s < selectedSaturation.length; s++) {
-					for (var l = 0; l < selectedLuminosity.length; l++) {
-
-						if(selectedLuminosity[l] === pbColors[i].luminosity){
-							if(selectedSaturation[s] === pbColors[i].saturation){
-								if(selectedHue[h] === pbColors[i].hue){
-									showcaseColors.push(pbColors[i]);
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	break;
 	}
 
 	
@@ -2381,7 +2339,6 @@ for (var i = 0; i < 3; i++) {
 		showDesatSymbol = true;
 	} 
 
-	const forumPaste = document.createElement("div");
 	let forumString = "";
 
 
@@ -2508,10 +2465,7 @@ for (var i = 0; i < 3; i++) {
 		`style='border-color: black; border: 1px solid black; height: 16px; width: 28px; border-radius: 4px; margin-left: 1em; backgroundColor: ;'`);
 	*/
 
-	forumPaste.textContent = forumString;
-
-	forumBox.appendChild(forumPaste);		
-
+	forumBox.textContent = forumString;
 
 
 }

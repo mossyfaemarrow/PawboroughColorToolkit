@@ -6,16 +6,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Faemarrows Pawborough Color Indexer</title>
+	<title>PB Color Indexer</title>
+
+    <meta name="description" content="Color Indexer for Pawborough, by FaeMarrow">
+    <meta name="author" content="FaeMarrow">
+    <meta name="keywords" content="Pawborough, Colors, Sort">    
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
 
 	<script src="colorIndexerScript.js"></script>
+	<script src="darkMode.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script> 
 
 	</head>
-	<body>
+	<body onload="generate()" onload="darkModeControl()">
 
 
 		<div class="container-fluid">
@@ -174,10 +179,12 @@
 							<div id="purpleSymbol"></div>
 							<div id="pinkSymbol"></div>
 
-						</div>						
+						</div>	
 
 					</div>
 					<br>
+					<button onclick="darkModeSwitch()" class="right-align">Darkmode?</button>					
+					<br><br>
 					<p>Problems or suggestions? Contact Faemarrow on PB</p>
 
 					<h2>Forum Code:</h2>
