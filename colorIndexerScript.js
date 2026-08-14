@@ -2433,11 +2433,12 @@ for (var i = 0; i < 3; i++) {
 				lineData.appendChild(symbol);
 			} else if(showcaseColors[i].luminosity === "Medium"){
 				const symbol = document.getElementById("colorSymbolMediumBasis").cloneNode(true);
-				symbol.classList.add('lightFix');
+				symbol.classList.add('lightFix');						
 				lineData.appendChild(symbol);
+
 			} else if(showcaseColors[i].luminosity === "Dark"){
-				symbol.classList.add('lightFix');
 				const symbol = document.getElementById("colorSymbolDarkBasis").cloneNode(true);
+				symbol.classList.add('lightFix');				
 				lineData.appendChild(symbol);
 			}
 
